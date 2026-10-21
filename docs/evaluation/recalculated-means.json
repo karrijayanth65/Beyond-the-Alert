@@ -1,0 +1,30 @@
+{
+  "basis": "Reported supplied dataset, not a new implementation benchmark",
+  "rows": 15,
+  "means": [
+    {
+      "label": "Manual",
+      "rows": 5,
+      "triage_time_s": 209.0,
+      "action_quality_5": 3.0,
+      "context_quality_5": 3.6,
+      "analyst_steps": 6.6
+    },
+    {
+      "label": "AI No Tools",
+      "rows": 3,
+      "triage_time_s": 130.0,
+      "action_quality_5": 4.0,
+      "context_quality_5": 3.0,
+      "analyst_steps": 3.0
+    },
+    {
+      "label": "AI Full",
+      "rows": 7,
+      "triage_time_s": 38.114285714285714,
+      "action_quality_5": 4.571428571428571,
+      "context_quality_5": 4.285714285714286,
+      "analyst_steps": 3.857142857142857
+    }
+  ]
+}

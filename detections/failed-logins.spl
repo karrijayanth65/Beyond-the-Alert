@@ -1,0 +1,4 @@
+index=windows sourcetype="XmlWinEventLog:Security" EventCode=4625 earliest=-5m latest=now
+| stats count min(_time) as first_seen max(_time) as last_seen values(EventRecordID) as record_ids by host TargetUserName IpAddress
+| where count >= 3
+| rename TargetUserName as subject IpAddress as source_ip

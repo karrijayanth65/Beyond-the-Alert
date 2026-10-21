@@ -1,0 +1,133 @@
+{
+  "source_guide": "Bible for Artifacts and info.MD",
+  "preserved_byte_for_byte": true,
+  "note": "Supplied collection contains prior display-name/date adjustments. Existing provenance footers remain intact. These assets illustrate the documented lab and do not establish a correlated execution of the maintained worker.",
+  "items": [
+    {
+      "artifact": 1,
+      "path": "assets/lab/01-n8n-workflow.png",
+      "source_collection": "Final Copy of Artifacts",
+      "source_path": "2026-10-17/01-n8n-Alert-Triage-and-Routing/20261017_56a91060_n8n-Workflow-Alert-Enrichment-Case-Creation-and-Slack.png",
+      "sha256": "d721617c85bdd3dec7ade5f0872eb9160edb92b48f66c48f786bd8764b3d360d",
+      "source_status": "Reviewed; source PNG bytes preserved",
+      "role": "Shows five webhook inputs routed through an LLM, AbuseIPDB and VirusTotal tools, DFIR-IRIS requests, and a conditional Slack step."
+    },
+    {
+      "artifact": 2,
+      "path": "assets/lab/02-slack-notification.png",
+      "source_collection": "Final Copy of Artifacts",
+      "source_path": "2026-10-17/02-Slack-Critical-Admin-Account-Alert/20261017_bd727699_Slack-Critical-Admin-Account-Alert-with-Response-Guidance.png",
+      "sha256": "e6df1b227f904f93ff8f798bb669f95388117659f0666dad12f0091359b6f03f",
+      "source_status": "Edited demonstration; visually reviewed",
+      "role": "Shows a critical admin-account alert with a summary, host and user indicators, recommended actions, and Splunk and IRIS links."
+    },
+    {
+      "artifact": 3,
+      "path": "assets/lab/03-iris-account-case.png",
+      "source_collection": "Final Copy of Artifacts",
+      "source_path": "2026-10-17/03-IRIS-Admin-Account-Investigation/20261017_d36c2d7f_DFIR-IRIS-Case-55-Admin-Account-Escalation-Summary.png",
+      "sha256": "20daec7732cfd71da3ae1e6e4211e13f29776933ced35d55e35bc0a3bb5d7d9d",
+      "source_status": "Edited demonstration; visually reviewed",
+      "role": "Shows an open critical case, related alert, source and automation tags, and a summary describing automatic escalation from Splunk and n8n."
+    },
+    {
+      "artifact": 4,
+      "path": "assets/lab/04-lab-machines.png",
+      "source_collection": "Final Copy of Artifacts",
+      "source_path": "2026-10-17/04-VMware-Lab-Machine-Inventory/20261017_c4ce4439_VMware-Lab-VMs-Windows-Kali-Splunk-n8n-and-IRIS.png",
+      "sha256": "a781e47d55a4716b485bb7ca6f22d20f81fa1ad8b8890f5fee89e9591ad2ba1b",
+      "source_status": "Edited demonstration; visually reviewed",
+      "role": "Shows VMware tabs and previews for Windows 10, Kali Linux, Splunk, n8n, and DFIR-IRIS, with Windows VM settings."
+    },
+    {
+      "artifact": 5,
+      "path": "assets/lab/05-nat-network.png",
+      "source_collection": "Final Copy of Artifacts",
+      "source_path": "2026-10-17/05-VMware-NAT-Network-Settings/20261017_0ea7440b_VMware-VMnet8-NAT-Subnet-192.168.106.0-24.png",
+      "sha256": "5188e18eb622d77d293b4aaf39976aba07257c5a8233073c1f5f60b83ed4f805",
+      "source_status": "Reviewed; source PNG bytes preserved",
+      "role": "Shows VMnet8 configured as NAT on 192.168.106.0 with subnet mask 255.255.255.0 and a host-only VMnet1 entry."
+    },
+    {
+      "artifact": 6,
+      "path": "assets/lab/06-incident-lifecycle.png",
+      "source_collection": "Final Copy of Artifacts",
+      "source_path": "2026-10-17/06-Incident-Response-Lifecycle-Diagram/20261017_13f998e2_Diagram-Alert-to-Case-Investigation-Response-and-Closure.png",
+      "sha256": "1736379a426b37847844846528fdac0e0350a9b097e9e53cf9b8148cc63192c6",
+      "source_status": "Reviewed; source PNG bytes preserved",
+      "role": "Illustrates alert triggering, case creation, investigation, evidence collection, response, and closure, with DFIR-IRIS and n8n roles."
+    },
+    {
+      "artifact": 7,
+      "path": "assets/lab/07-pipeline-architecture.png",
+      "source_collection": "Final Copy of Artifacts",
+      "source_path": "2026-10-17/07-SOC-Pipeline-Architecture-Diagram/20261017_78338e31_Diagram-Splunk-n8n-AI-Threat-Intel-IRIS-and-Slack.png",
+      "sha256": "1c76fa2385796a0ecd0f28059d463e403eeb19fbe2fc9a87d5647e6c5b3f56b5",
+      "source_status": "Reviewed; source PNG bytes preserved",
+      "role": "Connects endpoint logs, Splunk, n8n, GPT-4.1 Mini analysis, AbuseIPDB and VirusTotal enrichment, DFIR-IRIS, and Slack."
+    },
+    {
+      "artifact": 8,
+      "path": "assets/lab/08-failed-login-detection.png",
+      "source_collection": "Final Copy of Artifacts",
+      "source_path": "2026-10-17/08-Splunk-Failed-Login-Detection/20261017_0f191ff5_Splunk-Event-4625-Brute-Force-Search-and-Matched-Results.png",
+      "sha256": "f5ecfb3fe3fcdf7a803eb79cd0246d3971f38b0bc332d64202cd07b939c3cf4a",
+      "source_status": "Edited demonstration; visually reviewed",
+      "role": "Shows an EventCode 4625 search grouped by host, user, and source IP, with a count threshold and a matching result row."
+    },
+    {
+      "artifact": 9,
+      "path": "assets/lab/09-sysmon-telemetry.png",
+      "source_collection": "Final Copy of Artifacts",
+      "source_path": "2026-10-17/09-Windows-Process-Creation-Telemetry/20261017_4a6e72dd_Windows-Sysmon-Event-1-Process-Logs-and-File-Hashes.png",
+      "sha256": "3dea4c35388478ceeb468a3c06d64941968a6a03b90049de15bd9f12ab97f92b",
+      "source_status": "Edited demonstration; visually reviewed",
+      "role": "Shows the Sysmon Operational log in Event Viewer, Event ID 1 entries, and selected event details with hashes."
+    },
+    {
+      "artifact": 10,
+      "path": "assets/lab/10-iris-case-queue.png",
+      "source_collection": "Final Copy of Artifacts",
+      "source_path": "2026-10-17/10-IRIS-Open-Investigation-Queue/20261017_44b6f0ed_DFIR-IRIS-Open-Brute-Force-and-File-Hash-Cases.png",
+      "sha256": "8f9807333df9f0c08792c7ed6ef6c98d868ea413f7bc6e115d1f0a72f0072815",
+      "source_status": "Edited demonstration; visually reviewed",
+      "role": "Shows attributed open cases with severity, source, pipeline, indicator, and technique tags, including brute-force and file-hash cases."
+    },
+    {
+      "artifact": 11,
+      "path": "assets/lab/11-detection-rule-status.png",
+      "source_collection": "Final Copy of Artifacts",
+      "source_path": "2026-10-17/11-Splunk-Five-Disabled-Alert-Rules/20261017_bdf855a8_Splunk-Five-Lab-Detection-Rules-Displayed-as-Disabled.png",
+      "sha256": "0c53661c4cd70eb8ad92381b1f5fe864f600cf3dad1155d333dc3f67cb553b85",
+      "source_status": "Edited demonstration; visually reviewed",
+      "role": "Lists admin-account creation, failed login, hash detection, network scanning, and PowerShell alerts; every displayed status is Disabled."
+    },
+    {
+      "artifact": 12,
+      "path": "assets/lab/12-account-change-detection.png",
+      "source_collection": "Final Copy of Artifacts",
+      "source_path": "2026-10-17/12-Splunk-Admin-Account-Detection/20261017_51c7f19e_Splunk-Events-4720-4732-Account-and-Admin-Group-Detection.png",
+      "sha256": "3026c223be309b173f96cabcff9d7e9201817798c52d1817411d9ac5ddbfa8bc",
+      "source_status": "Edited demonstration; visually reviewed",
+      "role": "Shows a query using Windows events 4720 and 4732 and result rows for created accounts and local administrator-group membership."
+    },
+    {
+      "artifact": 13,
+      "path": "assets/lab/13-network-topology.png",
+      "source_collection": "Final Copy of Artifacts",
+      "source_path": "2026-10-17/13-Lab-Network-and-Service-Flow/20261017_e02a7f49_Diagram-Lab-VM-Addresses-Log-Forwarding-and-Cloud-APIs.png",
+      "sha256": "026d2dbc70f014d9d3ae1d28345d2437d8ce46be851c977d302ae1dc92515d2d",
+      "source_status": "Reviewed; source PNG bytes preserved",
+      "role": "Shows the VMware NAT subnet, Kali and Windows roles, Splunk forwarding on port 9997, n8n webhooks, IRIS REST API, and external API services."
+    },
+    {
+      "artifact": 14,
+      "path": "assets/lab/14-reported-comparison.png",
+      "source_collection": "Final Copy of Artifacts",
+      "source_path": "2026-10-17/14-Reported-Lab-Pipeline-Comparison/20261017_9be46c8f_Radar-Chart-Reported-Manual-vs-AI-Lab-Performance.png",
+      "sha256": "e2e39b1fec6715f568d02ca6999e2e3b42c099d547cb389608b8aef4c5828413",
+      "source_status": "Reviewed; source PNG bytes preserved",
+      "role": "Compares AI Full, AI No Tools, and Manual modes across speed, action quality, context quality, efficiency, and accuracy."
+    }
+  ]
+}

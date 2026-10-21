@@ -1,0 +1,1316 @@
+{
+  "checked_at": "2026-10-21T17:39:23.811Z",
+  "result": "passed",
+  "count": 327,
+  "scope": "Syntax, deterministic generation, exact-case local Markdown targets, bounded identity and credential pattern scan",
+  "checks": [
+    {
+      "name": "syntax examples\\fixtures.mjs",
+      "pass": true
+    },
+    {
+      "name": "syntax scripts\\build.mjs",
+      "pass": true
+    },
+    {
+      "name": "syntax scripts\\check.mjs",
+      "pass": true
+    },
+    {
+      "name": "syntax scripts\\demo.mjs",
+      "pass": true
+    },
+    {
+      "name": "syntax src\\adapters.mjs",
+      "pass": true
+    },
+    {
+      "name": "syntax src\\analysis.mjs",
+      "pass": true
+    },
+    {
+      "name": "syntax src\\pipeline.mjs",
+      "pass": true
+    },
+    {
+      "name": "syntax src\\server.mjs",
+      "pass": true
+    },
+    {
+      "name": "syntax src\\state.mjs",
+      "pass": true
+    },
+    {
+      "name": "syntax src\\transport.mjs",
+      "pass": true
+    },
+    {
+      "name": "syntax src\\validation.mjs",
+      "pass": true
+    },
+    {
+      "name": "syntax tests\\core.test.mjs",
+      "pass": true
+    },
+    {
+      "name": "workflow matches maintained source",
+      "pass": true
+    },
+    {
+      "name": "fourteen supplied main artifacts",
+      "pass": true
+    },
+    {
+      "name": "artifact integrity 1",
+      "pass": true
+    },
+    {
+      "name": "artifact integrity 2",
+      "pass": true
+    },
+    {
+      "name": "artifact integrity 3",
+      "pass": true
+    },
+    {
+      "name": "artifact integrity 4",
+      "pass": true
+    },
+    {
+      "name": "artifact integrity 5",
+      "pass": true
+    },
+    {
+      "name": "artifact integrity 6",
+      "pass": true
+    },
+    {
+      "name": "artifact integrity 7",
+      "pass": true
+    },
+    {
+      "name": "artifact integrity 8",
+      "pass": true
+    },
+    {
+      "name": "artifact integrity 9",
+      "pass": true
+    },
+    {
+      "name": "artifact integrity 10",
+      "pass": true
+    },
+    {
+      "name": "artifact integrity 11",
+      "pass": true
+    },
+    {
+      "name": "artifact integrity 12",
+      "pass": true
+    },
+    {
+      "name": "artifact integrity 13",
+      "pass": true
+    },
+    {
+      "name": "artifact integrity 14",
+      "pass": true
+    },
+    {
+      "name": "input reproduction failed_logins",
+      "pass": true
+    },
+    {
+      "name": "output reproduction failed_logins",
+      "pass": true
+    },
+    {
+      "name": "HTML reproduction failed_logins",
+      "pass": true
+    },
+    {
+      "name": "input reproduction account_change",
+      "pass": true
+    },
+    {
+      "name": "output reproduction account_change",
+      "pass": true
+    },
+    {
+      "name": "HTML reproduction account_change",
+      "pass": true
+    },
+    {
+      "name": "input reproduction file_hash",
+      "pass": true
+    },
+    {
+      "name": "output reproduction file_hash",
+      "pass": true
+    },
+    {
+      "name": "HTML reproduction file_hash",
+      "pass": true
+    },
+    {
+      "name": "input reproduction powershell",
+      "pass": true
+    },
+    {
+      "name": "output reproduction powershell",
+      "pass": true
+    },
+    {
+      "name": "HTML reproduction powershell",
+      "pass": true
+    },
+    {
+      "name": "input reproduction network_scan",
+      "pass": true
+    },
+    {
+      "name": "output reproduction network_scan",
+      "pass": true
+    },
+    {
+      "name": "HTML reproduction network_scan",
+      "pass": true
+    },
+    {
+      "name": "identity scan .github\\ISSUE_TEMPLATE\\bug_report.md",
+      "pass": true
+    },
+    {
+      "name": "credential scan .github\\ISSUE_TEMPLATE\\bug_report.md",
+      "pass": true
+    },
+    {
+      "name": "identity scan .github\\ISSUE_TEMPLATE\\integration.md",
+      "pass": true
+    },
+    {
+      "name": "credential scan .github\\ISSUE_TEMPLATE\\integration.md",
+      "pass": true
+    },
+    {
+      "name": "identity scan .github\\pull_request_template.md",
+      "pass": true
+    },
+    {
+      "name": "credential scan .github\\pull_request_template.md",
+      "pass": true
+    },
+    {
+      "name": "identity scan .github\\workflows\\validate.yml",
+      "pass": true
+    },
+    {
+      "name": "credential scan .github\\workflows\\validate.yml",
+      "pass": true
+    },
+    {
+      "name": "identity scan assets\\analyst-decision.svg",
+      "pass": true
+    },
+    {
+      "name": "credential scan assets\\analyst-decision.svg",
+      "pass": true
+    },
+    {
+      "name": "identity scan assets\\architecture.svg",
+      "pass": true
+    },
+    {
+      "name": "credential scan assets\\architecture.svg",
+      "pass": true
+    },
+    {
+      "name": "identity scan assets\\lab\\07-pipeline-architecture.svg",
+      "pass": true
+    },
+    {
+      "name": "credential scan assets\\lab\\07-pipeline-architecture.svg",
+      "pass": true
+    },
+    {
+      "name": "identity scan assets\\lab\\13-network-topology.svg",
+      "pass": true
+    },
+    {
+      "name": "credential scan assets\\lab\\13-network-topology.svg",
+      "pass": true
+    },
+    {
+      "name": "identity scan assets\\lab\\provenance.json",
+      "pass": true
+    },
+    {
+      "name": "credential scan assets\\lab\\provenance.json",
+      "pass": true
+    },
+    {
+      "name": "identity scan assets\\lab\\README.md",
+      "pass": true
+    },
+    {
+      "name": "credential scan assets\\lab\\README.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/artifacts.md",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/provenance.json",
+      "pass": true
+    },
+    {
+      "name": "identity scan assets\\README.md",
+      "pass": true
+    },
+    {
+      "name": "credential scan assets\\README.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/validation.md",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/README.md",
+      "pass": true
+    },
+    {
+      "name": "local link reports/Beyond_the_Alert_Whitepaper.pdf",
+      "pass": true
+    },
+    {
+      "name": "identity scan assets\\sequence.svg",
+      "pass": true
+    },
+    {
+      "name": "credential scan assets\\sequence.svg",
+      "pass": true
+    },
+    {
+      "name": "identity scan assets\\video-source.json",
+      "pass": true
+    },
+    {
+      "name": "credential scan assets\\video-source.json",
+      "pass": true
+    },
+    {
+      "name": "identity scan CHANGELOG.md",
+      "pass": true
+    },
+    {
+      "name": "credential scan CHANGELOG.md",
+      "pass": true
+    },
+    {
+      "name": "identity scan CONTRIBUTING.md",
+      "pass": true
+    },
+    {
+      "name": "credential scan CONTRIBUTING.md",
+      "pass": true
+    },
+    {
+      "name": "identity scan detections\\account-changes.spl",
+      "pass": true
+    },
+    {
+      "name": "credential scan detections\\account-changes.spl",
+      "pass": true
+    },
+    {
+      "name": "identity scan detections\\failed-logins.spl",
+      "pass": true
+    },
+    {
+      "name": "credential scan detections\\failed-logins.spl",
+      "pass": true
+    },
+    {
+      "name": "identity scan detections\\file-hash.spl",
+      "pass": true
+    },
+    {
+      "name": "credential scan detections\\file-hash.spl",
+      "pass": true
+    },
+    {
+      "name": "identity scan detections\\network-scan.spl",
+      "pass": true
+    },
+    {
+      "name": "credential scan detections\\network-scan.spl",
+      "pass": true
+    },
+    {
+      "name": "identity scan detections\\powershell.spl",
+      "pass": true
+    },
+    {
+      "name": "credential scan detections\\powershell.spl",
+      "pass": true
+    },
+    {
+      "name": "identity scan detections\\README.md",
+      "pass": true
+    },
+    {
+      "name": "credential scan detections\\README.md",
+      "pass": true
+    },
+    {
+      "name": "local link detections/failed-logins.spl",
+      "pass": true
+    },
+    {
+      "name": "local link detections/account-changes.spl",
+      "pass": true
+    },
+    {
+      "name": "local link detections/file-hash.spl",
+      "pass": true
+    },
+    {
+      "name": "local link detections/powershell.spl",
+      "pass": true
+    },
+    {
+      "name": "local link detections/network-scan.spl",
+      "pass": true
+    },
+    {
+      "name": "local link examples/inputs",
+      "pass": true
+    },
+    {
+      "name": "local link docs/contracts.md",
+      "pass": true
+    },
+    {
+      "name": "identity scan docs\\architecture.md",
+      "pass": true
+    },
+    {
+      "name": "credential scan docs\\architecture.md",
+      "pass": true
+    },
+    {
+      "name": "local link assets/architecture.png",
+      "pass": true
+    },
+    {
+      "name": "local link docs/contracts.md",
+      "pass": true
+    },
+    {
+      "name": "local link assets/sequence.png",
+      "pass": true
+    },
+    {
+      "name": "identity scan docs\\artifacts.md",
+      "pass": true
+    },
+    {
+      "name": "credential scan docs\\artifacts.md",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/01-n8n-workflow.png",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/02-slack-notification.png",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/03-iris-account-case.png",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/04-lab-machines.png",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/05-nat-network.png",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/06-incident-lifecycle.png",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/07-pipeline-architecture.png",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/08-failed-login-detection.png",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/09-sysmon-telemetry.png",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/10-iris-case-queue.png",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/11-detection-rule-status.png",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/12-account-change-detection.png",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/13-network-topology.png",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/14-reported-comparison.png",
+      "pass": true
+    },
+    {
+      "name": "local link docs/architecture.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/contracts.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/validation.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/evaluation/README.md",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/provenance.json",
+      "pass": true
+    },
+    {
+      "name": "identity scan docs\\contracts.md",
+      "pass": true
+    },
+    {
+      "name": "credential scan docs\\contracts.md",
+      "pass": true
+    },
+    {
+      "name": "local link src/validation.mjs",
+      "pass": true
+    },
+    {
+      "name": "local link src/analysis.mjs",
+      "pass": true
+    },
+    {
+      "name": "local link examples/inputs",
+      "pass": true
+    },
+    {
+      "name": "identity scan docs\\evaluation\\README.md",
+      "pass": true
+    },
+    {
+      "name": "credential scan docs\\evaluation\\README.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/evaluation/reported-runs.csv",
+      "pass": true
+    },
+    {
+      "name": "local link docs/evaluation/recalculated-means.json",
+      "pass": true
+    },
+    {
+      "name": "local link docs/artifacts.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/evidence-policy.md",
+      "pass": true
+    },
+    {
+      "name": "identity scan docs\\evaluation\\recalculated-means.json",
+      "pass": true
+    },
+    {
+      "name": "credential scan docs\\evaluation\\recalculated-means.json",
+      "pass": true
+    },
+    {
+      "name": "identity scan docs\\evidence-policy.md",
+      "pass": true
+    },
+    {
+      "name": "credential scan docs\\evidence-policy.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/artifacts.md",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/provenance.json",
+      "pass": true
+    },
+    {
+      "name": "local link assets/video-source.json",
+      "pass": true
+    },
+    {
+      "name": "identity scan docs\\investigation.md",
+      "pass": true
+    },
+    {
+      "name": "credential scan docs\\investigation.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/validation.md",
+      "pass": true
+    },
+    {
+      "name": "local link examples/inputs/account_change.json",
+      "pass": true
+    },
+    {
+      "name": "local link assets/account-change-example.png",
+      "pass": true
+    },
+    {
+      "name": "local link assets/account-change-example.png",
+      "pass": true
+    },
+    {
+      "name": "local link examples/outputs/account_change.json",
+      "pass": true
+    },
+    {
+      "name": "local link assets/analyst-decision.png",
+      "pass": true
+    },
+    {
+      "name": "identity scan docs\\README.md",
+      "pass": true
+    },
+    {
+      "name": "credential scan docs\\README.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/architecture.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/investigation.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/setup.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/contracts.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/architecture.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/setup.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/contracts.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/investigation.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/validation.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/troubleshooting.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/evidence-policy.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/scenarios.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/roadmap.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/whitepaper-guide.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/references.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/artifacts.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/evaluation/README.md",
+      "pass": true
+    },
+    {
+      "name": "identity scan docs\\references.md",
+      "pass": true
+    },
+    {
+      "name": "credential scan docs\\references.md",
+      "pass": true
+    },
+    {
+      "name": "identity scan docs\\roadmap.md",
+      "pass": true
+    },
+    {
+      "name": "credential scan docs\\roadmap.md",
+      "pass": true
+    },
+    {
+      "name": "identity scan docs\\scenarios.md",
+      "pass": true
+    },
+    {
+      "name": "credential scan docs\\scenarios.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/contracts.md",
+      "pass": true
+    },
+    {
+      "name": "local link detections/README.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/evaluation/README.md",
+      "pass": true
+    },
+    {
+      "name": "identity scan docs\\setup.md",
+      "pass": true
+    },
+    {
+      "name": "credential scan docs\\setup.md",
+      "pass": true
+    },
+    {
+      "name": "local link detections/README.md",
+      "pass": true
+    },
+    {
+      "name": "identity scan docs\\troubleshooting.md",
+      "pass": true
+    },
+    {
+      "name": "credential scan docs\\troubleshooting.md",
+      "pass": true
+    },
+    {
+      "name": "identity scan docs\\validation.md",
+      "pass": true
+    },
+    {
+      "name": "credential scan docs\\validation.md",
+      "pass": true
+    },
+    {
+      "name": "local link reports/validation-summary.json",
+      "pass": true
+    },
+    {
+      "name": "local link reports/tests.tap",
+      "pass": true
+    },
+    {
+      "name": "identity scan docs\\whitepaper-guide.md",
+      "pass": true
+    },
+    {
+      "name": "credential scan docs\\whitepaper-guide.md",
+      "pass": true
+    },
+    {
+      "name": "local link reports/Beyond_the_Alert_Whitepaper.pdf",
+      "pass": true
+    },
+    {
+      "name": "local link reports/Jayanth_Whitepaper.pdf",
+      "pass": true
+    },
+    {
+      "name": "local link docs/architecture.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/artifacts.md",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/provenance.json",
+      "pass": true
+    },
+    {
+      "name": "local link docs/evidence-policy.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/evaluation/README.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/evaluation/reported-runs.csv",
+      "pass": true
+    },
+    {
+      "name": "identity scan examples\\fixtures.mjs",
+      "pass": true
+    },
+    {
+      "name": "credential scan examples\\fixtures.mjs",
+      "pass": true
+    },
+    {
+      "name": "identity scan examples\\inputs\\account_change.json",
+      "pass": true
+    },
+    {
+      "name": "credential scan examples\\inputs\\account_change.json",
+      "pass": true
+    },
+    {
+      "name": "identity scan examples\\inputs\\failed_logins.json",
+      "pass": true
+    },
+    {
+      "name": "credential scan examples\\inputs\\failed_logins.json",
+      "pass": true
+    },
+    {
+      "name": "identity scan examples\\inputs\\file_hash.json",
+      "pass": true
+    },
+    {
+      "name": "credential scan examples\\inputs\\file_hash.json",
+      "pass": true
+    },
+    {
+      "name": "identity scan examples\\inputs\\network_scan.json",
+      "pass": true
+    },
+    {
+      "name": "credential scan examples\\inputs\\network_scan.json",
+      "pass": true
+    },
+    {
+      "name": "identity scan examples\\inputs\\powershell.json",
+      "pass": true
+    },
+    {
+      "name": "credential scan examples\\inputs\\powershell.json",
+      "pass": true
+    },
+    {
+      "name": "identity scan examples\\outputs\\account_change.html",
+      "pass": true
+    },
+    {
+      "name": "credential scan examples\\outputs\\account_change.html",
+      "pass": true
+    },
+    {
+      "name": "identity scan examples\\outputs\\account_change.json",
+      "pass": true
+    },
+    {
+      "name": "credential scan examples\\outputs\\account_change.json",
+      "pass": true
+    },
+    {
+      "name": "identity scan examples\\outputs\\failed_logins.html",
+      "pass": true
+    },
+    {
+      "name": "credential scan examples\\outputs\\failed_logins.html",
+      "pass": true
+    },
+    {
+      "name": "identity scan examples\\outputs\\failed_logins.json",
+      "pass": true
+    },
+    {
+      "name": "credential scan examples\\outputs\\failed_logins.json",
+      "pass": true
+    },
+    {
+      "name": "identity scan examples\\outputs\\file_hash.html",
+      "pass": true
+    },
+    {
+      "name": "credential scan examples\\outputs\\file_hash.html",
+      "pass": true
+    },
+    {
+      "name": "identity scan examples\\outputs\\file_hash.json",
+      "pass": true
+    },
+    {
+      "name": "credential scan examples\\outputs\\file_hash.json",
+      "pass": true
+    },
+    {
+      "name": "identity scan examples\\outputs\\network_scan.html",
+      "pass": true
+    },
+    {
+      "name": "credential scan examples\\outputs\\network_scan.html",
+      "pass": true
+    },
+    {
+      "name": "identity scan examples\\outputs\\network_scan.json",
+      "pass": true
+    },
+    {
+      "name": "credential scan examples\\outputs\\network_scan.json",
+      "pass": true
+    },
+    {
+      "name": "identity scan examples\\outputs\\powershell.html",
+      "pass": true
+    },
+    {
+      "name": "credential scan examples\\outputs\\powershell.html",
+      "pass": true
+    },
+    {
+      "name": "identity scan examples\\outputs\\powershell.json",
+      "pass": true
+    },
+    {
+      "name": "credential scan examples\\outputs\\powershell.json",
+      "pass": true
+    },
+    {
+      "name": "identity scan package.json",
+      "pass": true
+    },
+    {
+      "name": "credential scan package.json",
+      "pass": true
+    },
+    {
+      "name": "identity scan README.md",
+      "pass": true
+    },
+    {
+      "name": "credential scan README.md",
+      "pass": true
+    },
+    {
+      "name": "local link assets/investigation-lifecycle-transparent.png",
+      "pass": true
+    },
+    {
+      "name": "local link assets/investigation-lifecycle-transparent.png",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/06-incident-lifecycle.png",
+      "pass": true
+    },
+    {
+      "name": "local link docs/artifacts.md",
+      "pass": true
+    },
+    {
+      "name": "local link assets/architecture.png",
+      "pass": true
+    },
+    {
+      "name": "local link docs/architecture.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/validation.md",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/14-reported-comparison.png",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/14-reported-comparison.png",
+      "pass": true
+    },
+    {
+      "name": "local link docs/evaluation/README.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/evaluation/README.md",
+      "pass": true
+    },
+    {
+      "name": "local link reports/Beyond_the_Alert_Whitepaper.pdf",
+      "pass": true
+    },
+    {
+      "name": "local link docs/whitepaper-guide.md",
+      "pass": true
+    },
+    {
+      "name": "local link reports/Jayanth_Whitepaper.pdf",
+      "pass": true
+    },
+    {
+      "name": "local link docs/artifacts.md",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/provenance.json",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/01-n8n-workflow.png",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/01-n8n-workflow.png",
+      "pass": true
+    },
+    {
+      "name": "local link workflows/jayanth.json",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/02-slack-notification.png",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/02-slack-notification.png",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/03-iris-account-case.png",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/03-iris-account-case.png",
+      "pass": true
+    },
+    {
+      "name": "local link docs/artifacts.md",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/10-iris-case-queue.png",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/10-iris-case-queue.png",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/04-lab-machines.png",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/04-lab-machines.png",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/05-nat-network.png",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/05-nat-network.png",
+      "pass": true
+    },
+    {
+      "name": "local link docs/setup.md",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/13-network-topology.svg",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/13-network-topology.png",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/07-pipeline-architecture.svg",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/07-pipeline-architecture.png",
+      "pass": true
+    },
+    {
+      "name": "local link docs/architecture.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/validation.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/setup.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/scenarios.md",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/11-detection-rule-status.png",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/11-detection-rule-status.png",
+      "pass": true
+    },
+    {
+      "name": "local link docs/setup.md",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/08-failed-login-detection.png",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/08-failed-login-detection.png",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/12-account-change-detection.png",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/12-account-change-detection.png",
+      "pass": true
+    },
+    {
+      "name": "local link detections/README.md",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/09-sysmon-telemetry.png",
+      "pass": true
+    },
+    {
+      "name": "local link assets/lab/09-sysmon-telemetry.png",
+      "pass": true
+    },
+    {
+      "name": "local link docs/evaluation/README.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/artifacts.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/roadmap.md",
+      "pass": true
+    },
+    {
+      "name": "local link SECURITY.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/validation.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/references.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/setup.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/troubleshooting.md",
+      "pass": true
+    },
+    {
+      "name": "local link examples/inputs",
+      "pass": true
+    },
+    {
+      "name": "local link examples/outputs",
+      "pass": true
+    },
+    {
+      "name": "local link tests/core.test.mjs",
+      "pass": true
+    },
+    {
+      "name": "local link reports/validation-summary.json",
+      "pass": true
+    },
+    {
+      "name": "local link assets/account-change-example.png",
+      "pass": true
+    },
+    {
+      "name": "local link assets/account-change-example.png",
+      "pass": true
+    },
+    {
+      "name": "local link docs/investigation.md",
+      "pass": true
+    },
+    {
+      "name": "local link docs/evidence-policy.md",
+      "pass": true
+    },
+    {
+      "name": "identity scan reports\\repository-checks.json",
+      "pass": true
+    },
+    {
+      "name": "credential scan reports\\repository-checks.json",
+      "pass": true
+    },
+    {
+      "name": "identity scan reports\\validation-summary.json",
+      "pass": true
+    },
+    {
+      "name": "credential scan reports\\validation-summary.json",
+      "pass": true
+    },
+    {
+      "name": "identity scan scripts\\build.mjs",
+      "pass": true
+    },
+    {
+      "name": "credential scan scripts\\build.mjs",
+      "pass": true
+    },
+    {
+      "name": "identity scan scripts\\check.mjs",
+      "pass": true
+    },
+    {
+      "name": "credential scan scripts\\check.mjs",
+      "pass": true
+    },
+    {
+      "name": "identity scan scripts\\demo.mjs",
+      "pass": true
+    },
+    {
+      "name": "credential scan scripts\\demo.mjs",
+      "pass": true
+    },
+    {
+      "name": "identity scan SECURITY.md",
+      "pass": true
+    },
+    {
+      "name": "credential scan SECURITY.md",
+      "pass": true
+    },
+    {
+      "name": "identity scan src\\adapters.mjs",
+      "pass": true
+    },
+    {
+      "name": "credential scan src\\adapters.mjs",
+      "pass": true
+    },
+    {
+      "name": "identity scan src\\analysis.mjs",
+      "pass": true
+    },
+    {
+      "name": "credential scan src\\analysis.mjs",
+      "pass": true
+    },
+    {
+      "name": "identity scan src\\pipeline.mjs",
+      "pass": true
+    },
+    {
+      "name": "credential scan src\\pipeline.mjs",
+      "pass": true
+    },
+    {
+      "name": "identity scan src\\server.mjs",
+      "pass": true
+    },
+    {
+      "name": "credential scan src\\server.mjs",
+      "pass": true
+    },
+    {
+      "name": "identity scan src\\state.mjs",
+      "pass": true
+    },
+    {
+      "name": "credential scan src\\state.mjs",
+      "pass": true
+    },
+    {
+      "name": "identity scan src\\transport.mjs",
+      "pass": true
+    },
+    {
+      "name": "credential scan src\\transport.mjs",
+      "pass": true
+    },
+    {
+      "name": "identity scan src\\validation.mjs",
+      "pass": true
+    },
+    {
+      "name": "credential scan src\\validation.mjs",
+      "pass": true
+    },
+    {
+      "name": "identity scan tests\\core.test.mjs",
+      "pass": true
+    },
+    {
+      "name": "credential scan tests\\core.test.mjs",
+      "pass": true
+    },
+    {
+      "name": "identity scan workflows\\jayanth.json",
+      "pass": true
+    },
+    {
+      "name": "credential scan workflows\\jayanth.json",
+      "pass": true
+    }
+  ]
+}

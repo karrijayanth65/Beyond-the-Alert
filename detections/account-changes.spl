@@ -1,0 +1,3 @@
+index=windows sourcetype="XmlWinEventLog:Security" (EventCode=4720 OR EventCode=4732) earliest=-5m latest=now
+| table _time host EventCode EventRecordID SubjectUserName SubjectUserSid TargetUserName TargetSid MemberName MemberSid
+| sort 0 _time

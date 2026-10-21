@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "project": "Beyond the Alert",
+  "alert": {
+    "schema_version": 1,
+    "source": "splunk",
+    "alert_id": "example-powershell-001",
+    "event_type": "powershell",
+    "observed_at": "2026-10-21T09:30:00Z",
+    "host": "JAYANTH-LAB-01",
+    "subject": "lab-user",
+    "initiating_user": null,
+    "source_ip": null,
+    "source_link": "https://splunk.example.invalid/en-US/app/search/search?sid=example",
+    "evidence": [
+      {
+        "ref": "event-001",
+        "event_id": 1,
+        "record_id": "example-001",
+        "summary": "A process command line includes an encoded PowerShell argument."
+      }
+    ],
+    "details": {
+      "encoded": true
+    },
+    "synthetic": true
+  },
+  "status": "prepared",
+  "fingerprint": "da67f9d682add885764144812d65002fd8838aa4b5787b1d203caca63c8451b8",
+  "started_at": "2026-10-21T09:30:01Z",
+  "stages": [
+    {
+      "name": "input_validated",
+      "at": "2026-10-21T09:30:01Z"
+    },
+    {
+      "name": "enrichment_completed",
+      "at": "2026-10-21T09:30:01Z"
+    },
+    {
+      "name": "case_prepared",
+      "at": "2026-10-21T09:30:01Z"
+    }
+  ],
+  "errors": [],
+  "delivery_mode": "prepare",
+  "enrichment": [],
+  "assessment": {
+    "alert_id": "example-powershell-001",
+    "host": "JAYANTH-LAB-01",
+    "subject": "lab-user",
+    "initiating_user": null,
+    "severity": "high",
+    "summary": "powershell activity on JAYANTH-LAB-01 requires validation against source events and authorization context.",
+    "evidence_quotes": [
+      {
+        "ref": "event-001",
+        "quote": "A process command line includes an encoded PowerShell argument."
+      }
+    ],
+    "recommended_checks": [
+      "review-source-events",
+      "review-related-logons",
+      "escalate-for-review"
+    ],
+    "assessment_basis": "Advisory interpretation; analyst validation required",
+    "policy_floor": "high"
+  },
+  "payloads": {
+    "iris": {
+      "alert_title": "Beyond the Alert | powershell | JAYANTH-LAB-01",
+      "alert_description": "Investigation lead. powershell activity on JAYANTH-LAB-01 requires validation against source events and authorization context.",
+      "alert_source": "Beyond the Alert",
+      "alert_source_ref": "example-powershell-001",
+      "alert_source_link": "https://splunk.example.invalid/en-US/app/search/search?sid=example",
+      "alert_severity_id": 4,
+      "alert_status_id": 2,
+      "alert_customer_id": 1,
+      "alert_note": "{\n  \"observed_at\": \"2026-10-21T09:30:00Z\",\n  \"host\": \"JAYANTH-LAB-01\",\n  \"subject\": \"lab-user\",\n  \"initiating_user\": null,\n  \"evidence\": [\n    {\n      \"ref\": \"event-001\",\n      \"event_id\": 1,\n      \"record_id\": \"example-001\",\n      \"summary\": \"A process command line includes an encoded PowerShell argument.\"\n    }\n  ],\n  \"enrichment\": [],\n  \"assessment\": {\n    \"alert_id\": \"example-powershell-001\",\n    \"host\": \"JAYANTH-LAB-01\",\n    \"subject\": \"lab-user\",\n    \"initiating_user\": null,\n    \"severity\": \"high\",\n    \"summary\": \"powershell activity on JAYANTH-LAB-01 requires validation against source events and authorization context.\",\n    \"evidence_quotes\": [\n      {\n        \"ref\": \"event-001\",\n        \"quote\": \"A process command line includes an encoded PowerShell argument.\"\n      }\n    ],\n    \"recommended_checks\": [\n      \"review-source-events\",\n      \"review-related-logons\",\n      \"escalate-for-review\"\n    ],\n    \"assessment_basis\": \"Advisory interpretation; analyst validation required\",\n    \"policy_floor\": \"high\"\n  }\n}",
+      "alert_tags": "beyond-the-alert,powershell,analyst-review",
+      "alert_iocs": [],
+      "alert_assets": [],
+      "alert_context": {
+        "observed_at": "2026-10-21T09:30:00Z",
+        "host": "JAYANTH-LAB-01",
+        "subject": "lab-user",
+        "initiating_user": null,
+        "evidence": [
+          {
+            "ref": "event-001",
+            "event_id": 1,
+            "record_id": "example-001",
+            "summary": "A process command line includes an encoded PowerShell argument."
+          }
+        ],
+        "enrichment": [],
+        "assessment": {
+          "alert_id": "example-powershell-001",
+          "host": "JAYANTH-LAB-01",
+          "subject": "lab-user",
+          "initiating_user": null,
+          "severity": "high",
+          "summary": "powershell activity on JAYANTH-LAB-01 requires validation against source events and authorization context.",
+          "evidence_quotes": [
+            {
+              "ref": "event-001",
+              "quote": "A process command line includes an encoded PowerShell argument."
+            }
+          ],
+          "recommended_checks": [
+            "review-source-events",
+            "review-related-logons",
+            "escalate-for-review"
+          ],
+          "assessment_basis": "Advisory interpretation; analyst validation required",
+          "policy_floor": "high"
+        }
+      }
+    },
+    "slack": {
+      "text": "Beyond the Alert | HIGH | JAYANTH-LAB-01\npowershell activity on JAYANTH-LAB-01 requires validation against source events and authorization context.\nSource time: 2026-10-21T09:30:00Z\nReview: review-source-events, review-related-logons, escalate-for-review\nSource: https://splunk.example.invalid/en-US/app/search/search?sid=example\nAnalyst validation required.",
+      "unfurl_links": false,
+      "unfurl_media": false
+    }
+  },
+  "notification_eligible": true,
+  "finished_at": "2026-10-21T09:30:01Z"
+}

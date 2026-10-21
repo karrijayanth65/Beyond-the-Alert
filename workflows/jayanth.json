@@ -1,0 +1,230 @@
+{
+  "name": "Beyond the Alert",
+  "active": false,
+  "nodes": [
+    {
+      "id": "ingress",
+      "name": "Alert intake",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        0,
+        0
+      ],
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "jayanth-alerts",
+        "authentication": "headerAuth",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "webhookId": "jayanth-alerts-v1"
+    },
+    {
+      "id": "validate",
+      "name": "Validate evidence",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        240,
+        0
+      ],
+      "parameters": {
+        "jsCode": "const validateAlert = function validateAlert(input) {\n  const fail = message => { throw new Error(`INPUT: ${message}`); };\n  if (!input || Array.isArray(input) || typeof input !== 'object') fail('expected object');\n  const allowed = ['schema_version','source','alert_id','event_type','observed_at','host','subject','initiating_user','source_ip','sha256','source_link','evidence','details','synthetic'];\n  if (Object.keys(input).some(k => !allowed.includes(k))) fail('unexpected field');\n  const types = ['failed_logins','account_change','file_hash','powershell','network_scan'];\n  if (input.schema_version !== 1 || input.source !== 'splunk' || !types.includes(input.event_type)) fail('schema source or event_type');\n  for (const name of ['alert_id','host']) if (typeof input[name] !== 'string' || !/^[A-Za-z0-9_.:-]{1,128}$/.test(input[name])) fail(name);\n  if (typeof input.observed_at !== 'string' || !/^\\d{4}-\\d\\d-\\d\\dT\\d\\d:\\d\\d:\\d\\d(?:\\.\\d{1,3})?(?:Z|[+-]\\d\\d:\\d\\d)$/.test(input.observed_at) || !Number.isFinite(Date.parse(input.observed_at))) fail('timestamp with timezone required');\n  const day = input.observed_at.slice(0,10), parts=day.split('-').map(Number);\n  if (new Date(Date.UTC(parts[0],parts[1]-1,parts[2])).toISOString().slice(0,10)!==day) fail('calendar date');\n  const clock=input.observed_at.slice(11,19).split(':').map(Number);\n  if(clock[0]>23||clock[1]>59||clock[2]>59)fail('clock time');\n  for (const name of ['subject','initiating_user']) if (input[name] != null && (typeof input[name]!=='string' || input[name].length>128 || /[\\r\\n\\x00-\\x1f]/.test(input[name]))) fail(name);\n  if (input.source_ip != null && !/^(?:\\d{1,3}\\.){3}\\d{1,3}$/.test(input.source_ip)) fail('IPv4 required');\n  if (input.source_ip != null && input.source_ip.split('.').some(p => Number(p)>255 || (p.length>1 && p[0]==='0'))) fail('IPv4 octet');\n  if (input.sha256 != null && !/^[a-fA-F0-9]{64}$/.test(input.sha256)) fail('sha256');\n  if (input.event_type==='file_hash' && !input.sha256) fail('file hash required');\n  if (['failed_logins','network_scan'].includes(input.event_type) && !input.source_ip) fail('source IP required');\n  if (input.event_type==='account_change' && (!input.subject || !input.initiating_user)) fail('account identities required');\n  try { const u = new URL(input.source_link); if(u.protocol!=='https:' || u.username || u.password || input.source_link.length>2048) fail('source_link'); } catch { fail('HTTPS source link required'); }\n  if (!Array.isArray(input.evidence) || input.evidence.length<1 || input.evidence.length>30) fail('evidence length');\n  const refs=new Set();\n  for(const e of input.evidence) {\n    if(!e || typeof e!=='object' || Object.keys(e).some(k=>!['ref','event_id','record_id','summary'].includes(k))) fail('evidence shape');\n    if(typeof e.ref!=='string' || !/^[A-Za-z0-9_.:-]{1,128}$/.test(e.ref) || refs.has(e.ref)) fail('unique evidence reference');\n    refs.add(e.ref);\n    if(!Number.isInteger(e.event_id) || e.event_id<1 || typeof e.record_id!=='string' || !/^[A-Za-z0-9_.:-]{1,128}$/.test(e.record_id)) fail('event and record identifiers');\n    if(typeof e.summary!=='string' || e.summary.length<1 || e.summary.length>2000 || /[\\x00-\\x08]/.test(e.summary)) fail('evidence summary');\n  }\n  if(input.details == null || typeof input.details!=='object' || Array.isArray(input.details)) fail('details object');\n  if(JSON.stringify(input.details).length>4000) fail('details bound');\n  const expectedEvents={failed_logins:[4625],account_change:[4720,4732],file_hash:[1],powershell:[1,4688],network_scan:[5157]};\n  if(input.evidence.some(e=>!expectedEvents[input.event_type].includes(e.event_id)))fail('event does not match scenario');\n  if(input.event_type==='failed_logins'&&(!Number.isSafeInteger(input.details.count)||input.details.count<3))fail('failed login threshold');\n  if(input.event_type==='network_scan'&&!((Number.isSafeInteger(input.details.unique_ports)&&input.details.unique_ports>=3)||(Number.isSafeInteger(input.details.drops)&&input.details.drops>=5)))fail('scan threshold');\n  if(input.synthetic != null && typeof input.synthetic!=='boolean') fail('synthetic flag');\n  return JSON.parse(JSON.stringify({...input,sha256:input.sha256?.toLowerCase()}));\n};\nreturn $input.all().map(item => { try { return {json:{valid:true,alert:validateAlert(item.json.body)}}; } catch { return {json:{valid:false,error:'invalid_alert',review_required:true}}; } });"
+      }
+    },
+    {
+      "id": "valid",
+      "name": "Valid input",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        480,
+        0
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "input-valid",
+              "leftValue": "={{ $json.valid }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "worker",
+      "name": "Process investigation",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        720,
+        -100
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "https://worker.example.invalid/v1/triage",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($json.alert) }}",
+        "options": {
+          "timeout": 30000,
+          "redirect": {
+            "redirect": {
+              "followRedirects": false
+            }
+          },
+          "response": {
+            "response": {
+              "fullResponse": true
+            }
+          }
+        }
+      },
+      "onError": "continueErrorOutput"
+    },
+    {
+      "id": "respond",
+      "name": "Return receipt",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.4,
+      "position": [
+        1200,
+        -100
+      ],
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ $json.body ?? $json }}",
+        "options": {
+          "responseCode": "={{ $json.statusCode ?? 202 }}"
+        }
+      }
+    },
+    {
+      "id": "reject",
+      "name": "Reject invalid input",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.4,
+      "position": [
+        720,
+        180
+      ],
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ {error:\"invalid_alert\",review_required:true} }}",
+        "options": {
+          "responseCode": 400
+        }
+      }
+    },
+    {
+      "id": "failure",
+      "name": "Expose processing failure",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        960,
+        100
+      ],
+      "parameters": {
+        "jsCode": "return [{json:{statusCode:202,body:{status:\"needs_review\",error:\"worker_unavailable\",review_required:true}}}];"
+      }
+    }
+  ],
+  "connections": {
+    "Alert intake": {
+      "main": [
+        [
+          {
+            "node": "Validate evidence",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validate evidence": {
+      "main": [
+        [
+          {
+            "node": "Valid input",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Valid input": {
+      "main": [
+        [
+          {
+            "node": "Process investigation",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Reject invalid input",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Process investigation": {
+      "main": [
+        [
+          {
+            "node": "Return receipt",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Expose processing failure",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Expose processing failure": {
+      "main": [
+        [
+          {
+            "node": "Return receipt",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "saveDataErrorExecution": "all",
+    "saveDataSuccessExecution": "none",
+    "saveExecutionProgress": false
+  },
+  "pinData": {},
+  "tags": []
+}

@@ -1,0 +1,6 @@
+index=windows (EventCode=1 OR EventCode=4688) earliest=-5m latest=now
+| eval process=coalesce(Image,NewProcessName), command=coalesce(CommandLine,Process_Command_Line)
+| where match(process,"(?i)(powershell|pwsh)\\.exe$")
+| eval encoded=if(match(command,"(?i)-(enc|encodedcommand)\\s+"),1,0)
+| where encoded=1
+| table _time host EventCode EventRecordID User SubjectUserName process command ParentImage encoded

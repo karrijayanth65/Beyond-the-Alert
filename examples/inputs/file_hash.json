@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "source": "splunk",
+  "alert_id": "example-file_hash-001",
+  "event_type": "file_hash",
+  "observed_at": "2026-10-21T09:30:00Z",
+  "host": "JAYANTH-LAB-01",
+  "subject": "lab-user",
+  "initiating_user": null,
+  "source_ip": null,
+  "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "source_link": "https://splunk.example.invalid/en-US/app/search/search?sid=example",
+  "evidence": [
+    {
+      "ref": "event-001",
+      "event_id": 1,
+      "record_id": "example-001",
+      "summary": "A new process has a SHA256 value available for reputation review."
+    }
+  ],
+  "details": {},
+  "synthetic": true
+}

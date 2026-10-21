@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "source": "splunk",
+  "alert_id": "example-failed_logins-001",
+  "event_type": "failed_logins",
+  "observed_at": "2026-10-21T09:30:00Z",
+  "host": "JAYANTH-LAB-01",
+  "subject": "lab-user",
+  "initiating_user": null,
+  "source_ip": "192.168.56.20",
+  "sha256": null,
+  "source_link": "https://splunk.example.invalid/en-US/app/search/search?sid=example",
+  "evidence": [
+    {
+      "ref": "event-001",
+      "event_id": 4625,
+      "record_id": "example-001",
+      "summary": "Seven failed logons for a lab account from 192.168.56.20."
+    }
+  ],
+  "details": {
+    "count": 7
+  },
+  "synthetic": true
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "source": "splunk",
+  "alert_id": "example-account_change-001",
+  "event_type": "account_change",
+  "observed_at": "2026-10-21T09:30:00Z",
+  "host": "JAYANTH-LAB-01",
+  "subject": "lab-user",
+  "initiating_user": "lab-operator",
+  "source_ip": "192.168.56.20",
+  "sha256": null,
+  "source_link": "https://splunk.example.invalid/en-US/app/search/search?sid=example",
+  "evidence": [
+    {
+      "ref": "event-001",
+      "event_id": 4732,
+      "record_id": "example-001",
+      "summary": "A lab account was added to the local Administrators group; authorization requires review."
+    },
+    {
+      "ref": "event-002",
+      "event_id": 4720,
+      "record_id": "example-002",
+      "summary": "The initiating lab-operator identity created lab-user on the lab host before the group membership change."
+    }
+  ],
+  "details": {
+    "group_sid": "S-1-5-32-544"
+  },
+  "synthetic": true
+}

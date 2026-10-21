@@ -1,0 +1,4 @@
+index=windows sourcetype="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational" EventCode=1 earliest=-5m latest=now
+| rex field=Hashes "(?i)(?:^|,)SHA256=(?<sha256>[a-f0-9]{64})(?:,|$)"
+| where isnotnull(sha256)
+| table _time host EventCode EventRecordID User Image ParentImage CommandLine sha256

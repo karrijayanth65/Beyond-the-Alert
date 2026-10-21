@@ -1,0 +1,18 @@
+{
+  "project": "Beyond the Alert",
+  "kind": "GitHub-hosted native video attachment",
+  "source_filename": "Beyond the Alert-V2.mp4",
+  "source_sha256": "e76302e81b5c84f7202ced33d2aca5ae3e84fd51fb06284cc83505d766a51e52",
+  "bytes": 9727998,
+  "duration_seconds": 96,
+  "width": 852,
+  "height": 480,
+  "frame_rate": 24,
+  "video_codec": "H264",
+  "audio_codec": "AAC",
+  "upload_url": "https://github.com/user-attachments/assets/dd987e7c-7482-44d4-8458-6b449489ce47",
+  "source_handling": "User-provided V2 uploaded unchanged; original source files remain separate.",
+  "evidence_role": "Conceptual project explanation, not live lab execution.",
+  "youtube": "https://youtu.be/ZuyXWEKCFKM",
+  "youtube_role": "Full video with available multilingual audio/subtitle options."
+}

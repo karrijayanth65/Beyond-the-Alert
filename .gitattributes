@@ -1,0 +1,5 @@
+* text=auto eol=lf
+*.png binary
+*.pdf binary
+*.docx binary
+docs/evaluation/reported-runs.csv -text

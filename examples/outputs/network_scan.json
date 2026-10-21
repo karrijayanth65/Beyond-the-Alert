@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "project": "Beyond the Alert",
+  "alert": {
+    "schema_version": 1,
+    "source": "splunk",
+    "alert_id": "example-network_scan-001",
+    "event_type": "network_scan",
+    "observed_at": "2026-10-21T09:30:00Z",
+    "host": "JAYANTH-LAB-01",
+    "subject": "lab-user",
+    "initiating_user": null,
+    "source_ip": "192.168.56.20",
+    "source_link": "https://splunk.example.invalid/en-US/app/search/search?sid=example",
+    "evidence": [
+      {
+        "ref": "event-001",
+        "event_id": 5157,
+        "record_id": "example-001",
+        "summary": "Blocked connection records cover four destination service ports."
+      }
+    ],
+    "details": {
+      "unique_ports": 4
+    },
+    "synthetic": true
+  },
+  "status": "prepared",
+  "fingerprint": "1218f953b64862af5b45b897a202fea33bd811f6fbfb7c1529266509397ddaab",
+  "started_at": "2026-10-21T09:30:01Z",
+  "stages": [
+    {
+      "name": "input_validated",
+      "at": "2026-10-21T09:30:01Z"
+    },
+    {
+      "name": "enrichment_completed",
+      "at": "2026-10-21T09:30:01Z"
+    },
+    {
+      "name": "case_prepared",
+      "at": "2026-10-21T09:30:01Z"
+    }
+  ],
+  "errors": [],
+  "delivery_mode": "prepare",
+  "enrichment": [
+    {
+      "type": "ip",
+      "value": "192.168.56.20",
+      "status": "skipped",
+      "reason": "non_public_address"
+    }
+  ],
+  "assessment": {
+    "alert_id": "example-network_scan-001",
+    "host": "JAYANTH-LAB-01",
+    "subject": "lab-user",
+    "initiating_user": null,
+    "severity": "medium",
+    "summary": "network scan activity on JAYANTH-LAB-01 requires validation against source events and authorization context.",
+    "evidence_quotes": [
+      {
+        "ref": "event-001",
+        "quote": "Blocked connection records cover four destination service ports."
+      }
+    ],
+    "recommended_checks": [
+      "review-source-events",
+      "review-related-logons",
+      "escalate-for-review"
+    ],
+    "assessment_basis": "Advisory interpretation; analyst validation required",
+    "policy_floor": "medium"
+  },
+  "payloads": {
+    "iris": {
+      "alert_title": "Beyond the Alert | network_scan | JAYANTH-LAB-01",
+      "alert_description": "Investigation lead. network scan activity on JAYANTH-LAB-01 requires validation against source events and authorization context.",
+      "alert_source": "Beyond the Alert",
+      "alert_source_ref": "example-network_scan-001",
+      "alert_source_link": "https://splunk.example.invalid/en-US/app/search/search?sid=example",
+      "alert_severity_id": 3,
+      "alert_status_id": 2,
+      "alert_customer_id": 1,
+      "alert_note": "{\n  \"observed_at\": \"2026-10-21T09:30:00Z\",\n  \"host\": \"JAYANTH-LAB-01\",\n  \"subject\": \"lab-user\",\n  \"initiating_user\": null,\n  \"evidence\": [\n    {\n      \"ref\": \"event-001\",\n      \"event_id\": 5157,\n      \"record_id\": \"example-001\",\n      \"summary\": \"Blocked connection records cover four destination service ports.\"\n    }\n  ],\n  \"enrichment\": [\n    {\n      \"type\": \"ip\",\n      \"value\": \"192.168.56.20\",\n      \"status\": \"skipped\",\n      \"reason\": \"non_public_address\"\n    }\n  ],\n  \"assessment\": {\n    \"alert_id\": \"example-network_scan-001\",\n    \"host\": \"JAYANTH-LAB-01\",\n    \"subject\": \"lab-user\",\n    \"initiating_user\": null,\n    \"severity\": \"medium\",\n    \"summary\": \"network scan activity on JAYANTH-LAB-01 requires validation against source events and authorization context.\",\n    \"evidence_quotes\": [\n      {\n        \"ref\": \"event-001\",\n        \"quote\": \"Blocked connection records cover four destination service ports.\"\n      }\n    ],\n    \"recommended_checks\": [\n      \"review-source-events\",\n      \"review-related-logons\",\n      \"escalate-for-review\"\n    ],\n    \"assessment_basis\": \"Advisory interpretation; analyst validation required\",\n    \"policy_floor\": \"medium\"\n  }\n}",
+      "alert_tags": "beyond-the-alert,network_scan,analyst-review",
+      "alert_iocs": [],
+      "alert_assets": [],
+      "alert_context": {
+        "observed_at": "2026-10-21T09:30:00Z",
+        "host": "JAYANTH-LAB-01",
+        "subject": "lab-user",
+        "initiating_user": null,
+        "evidence": [
+          {
+            "ref": "event-001",
+            "event_id": 5157,
+            "record_id": "example-001",
+            "summary": "Blocked connection records cover four destination service ports."
+          }
+        ],
+        "enrichment": [
+          {
+            "type": "ip",
+            "value": "192.168.56.20",
+            "status": "skipped",
+            "reason": "non_public_address"
+          }
+        ],
+        "assessment": {
+          "alert_id": "example-network_scan-001",
+          "host": "JAYANTH-LAB-01",
+          "subject": "lab-user",
+          "initiating_user": null,
+          "severity": "medium",
+          "summary": "network scan activity on JAYANTH-LAB-01 requires validation against source events and authorization context.",
+          "evidence_quotes": [
+            {
+              "ref": "event-001",
+              "quote": "Blocked connection records cover four destination service ports."
+            }
+          ],
+          "recommended_checks": [
+            "review-source-events",
+            "review-related-logons",
+            "escalate-for-review"
+          ],
+          "assessment_basis": "Advisory interpretation; analyst validation required",
+          "policy_floor": "medium"
+        }
+      }
+    },
+    "slack": {
+      "text": "Beyond the Alert | MEDIUM | JAYANTH-LAB-01\nnetwork scan activity on JAYANTH-LAB-01 requires validation against source events and authorization context.\nSource time: 2026-10-21T09:30:00Z\nReview: review-source-events, review-related-logons, escalate-for-review\nSource: https://splunk.example.invalid/en-US/app/search/search?sid=example\nAnalyst validation required.",
+      "unfurl_links": false,
+      "unfurl_media": false
+    }
+  },
+  "notification_eligible": false,
+  "finished_at": "2026-10-21T09:30:01Z"
+}

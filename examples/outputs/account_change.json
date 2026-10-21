@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "project": "Beyond the Alert",
+  "alert": {
+    "schema_version": 1,
+    "source": "splunk",
+    "alert_id": "example-account_change-001",
+    "event_type": "account_change",
+    "observed_at": "2026-10-21T09:30:00Z",
+    "host": "JAYANTH-LAB-01",
+    "subject": "lab-user",
+    "initiating_user": "lab-operator",
+    "source_ip": "192.168.56.20",
+    "source_link": "https://splunk.example.invalid/en-US/app/search/search?sid=example",
+    "evidence": [
+      {
+        "ref": "event-001",
+        "event_id": 4732,
+        "record_id": "example-001",
+        "summary": "A lab account was added to the local Administrators group; authorization requires review."
+      },
+      {
+        "ref": "event-002",
+        "event_id": 4720,
+        "record_id": "example-002",
+        "summary": "The initiating lab-operator identity created lab-user on the lab host before the group membership change."
+      }
+    ],
+    "details": {
+      "group_sid": "S-1-5-32-544"
+    },
+    "synthetic": true
+  },
+  "status": "prepared",
+  "fingerprint": "11bda2a3a344c4b8dad28f012e8e35e6919346f58561b10ae037e5897d85c276",
+  "started_at": "2026-10-21T09:30:01Z",
+  "stages": [
+    {
+      "name": "input_validated",
+      "at": "2026-10-21T09:30:01Z"
+    },
+    {
+      "name": "enrichment_completed",
+      "at": "2026-10-21T09:30:01Z"
+    },
+    {
+      "name": "case_prepared",
+      "at": "2026-10-21T09:30:01Z"
+    }
+  ],
+  "errors": [],
+  "delivery_mode": "prepare",
+  "enrichment": [
+    {
+      "type": "ip",
+      "value": "192.168.56.20",
+      "status": "skipped",
+      "reason": "non_public_address"
+    }
+  ],
+  "assessment": {
+    "alert_id": "example-account_change-001",
+    "host": "JAYANTH-LAB-01",
+    "subject": "lab-user",
+    "initiating_user": "lab-operator",
+    "severity": "high",
+    "summary": "account change activity on JAYANTH-LAB-01 requires validation against source events and authorization context.",
+    "evidence_quotes": [
+      {
+        "ref": "event-001",
+        "quote": "A lab account was added to the local Administrators group; authorization requires review."
+      }
+    ],
+    "recommended_checks": [
+      "review-source-events",
+      "validate-change-approval",
+      "escalate-for-review"
+    ],
+    "assessment_basis": "Advisory interpretation; analyst validation required",
+    "policy_floor": "high"
+  },
+  "payloads": {
+    "iris": {
+      "alert_title": "Beyond the Alert | account_change | JAYANTH-LAB-01",
+      "alert_description": "Investigation lead. account change activity on JAYANTH-LAB-01 requires validation against source events and authorization context.",
+      "alert_source": "Beyond the Alert",
+      "alert_source_ref": "example-account_change-001",
+      "alert_source_link": "https://splunk.example.invalid/en-US/app/search/search?sid=example",
+      "alert_severity_id": 4,
+      "alert_status_id": 2,
+      "alert_customer_id": 1,
+      "alert_note": "{\n  \"observed_at\": \"2026-10-21T09:30:00Z\",\n  \"host\": \"JAYANTH-LAB-01\",\n  \"subject\": \"lab-user\",\n  \"initiating_user\": \"lab-operator\",\n  \"evidence\": [\n    {\n      \"ref\": \"event-001\",\n      \"event_id\": 4732,\n      \"record_id\": \"example-001\",\n      \"summary\": \"A lab account was added to the local Administrators group; authorization requires review.\"\n    },\n    {\n      \"ref\": \"event-002\",\n      \"event_id\": 4720,\n      \"record_id\": \"example-002\",\n      \"summary\": \"The initiating lab-operator identity created lab-user on the lab host before the group membership change.\"\n    }\n  ],\n  \"enrichment\": [\n    {\n      \"type\": \"ip\",\n      \"value\": \"192.168.56.20\",\n      \"status\": \"skipped\",\n      \"reason\": \"non_public_address\"\n    }\n  ],\n  \"assessment\": {\n    \"alert_id\": \"example-account_change-001\",\n    \"host\": \"JAYANTH-LAB-01\",\n    \"subject\": \"lab-user\",\n    \"initiating_user\": \"lab-operator\",\n    \"severity\": \"high\",\n    \"summary\": \"account change activity on JAYANTH-LAB-01 requires validation against source events and authorization context.\",\n    \"evidence_quotes\": [\n      {\n        \"ref\": \"event-001\",\n        \"quote\": \"A lab account was added to the local Administrators group; authorization requires review.\"\n      }\n    ],\n    \"recommended_checks\": [\n      \"review-source-events\",\n      \"validate-change-approval\",\n      \"escalate-for-review\"\n    ],\n    \"assessment_basis\": \"Advisory interpretation; analyst validation required\",\n    \"policy_floor\": \"high\"\n  }\n}",
+      "alert_tags": "beyond-the-alert,account_change,analyst-review",
+      "alert_iocs": [],
+      "alert_assets": [],
+      "alert_context": {
+        "observed_at": "2026-10-21T09:30:00Z",
+        "host": "JAYANTH-LAB-01",
+        "subject": "lab-user",
+        "initiating_user": "lab-operator",
+        "evidence": [
+          {
+            "ref": "event-001",
+            "event_id": 4732,
+            "record_id": "example-001",
+            "summary": "A lab account was added to the local Administrators group; authorization requires review."
+          },
+          {
+            "ref": "event-002",
+            "event_id": 4720,
+            "record_id": "example-002",
+            "summary": "The initiating lab-operator identity created lab-user on the lab host before the group membership change."
+          }
+        ],
+        "enrichment": [
+          {
+            "type": "ip",
+            "value": "192.168.56.20",
+            "status": "skipped",
+            "reason": "non_public_address"
+          }
+        ],
+        "assessment": {
+          "alert_id": "example-account_change-001",
+          "host": "JAYANTH-LAB-01",
+          "subject": "lab-user",
+          "initiating_user": "lab-operator",
+          "severity": "high",
+          "summary": "account change activity on JAYANTH-LAB-01 requires validation against source events and authorization context.",
+          "evidence_quotes": [
+            {
+              "ref": "event-001",
+              "quote": "A lab account was added to the local Administrators group; authorization requires review."
+            }
+          ],
+          "recommended_checks": [
+            "review-source-events",
+            "validate-change-approval",
+            "escalate-for-review"
+          ],
+          "assessment_basis": "Advisory interpretation; analyst validation required",
+          "policy_floor": "high"
+        }
+      }
+    },
+    "slack": {
+      "text": "Beyond the Alert | HIGH | JAYANTH-LAB-01\naccount change activity on JAYANTH-LAB-01 requires validation against source events and authorization context.\nSource time: 2026-10-21T09:30:00Z\nReview: review-source-events, validate-change-approval, escalate-for-review\nSource: https://splunk.example.invalid/en-US/app/search/search?sid=example\nAnalyst validation required.",
+      "unfurl_links": false,
+      "unfurl_media": false
+    }
+  },
+  "notification_eligible": true,
+  "finished_at": "2026-10-21T09:30:01Z"
+}

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="850" viewBox="0 0 1500 850"><rect width="100%" height="100%" fill="white"/>
+<text x="70" y="85" font-family="Segoe UI,Arial,sans-serif" font-size="40" font-weight="700" fill="#202a33">Implementation architecture</text>
+<text x="70" y="126" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#55616b">Evidence stays connected from source alert to analyst review.</text>
+<rect x="70" y="205" width="370" height="170" rx="14" fill="#f4f8f9" stroke="#acbdc4" stroke-width="2"/>
+<text x="90" y="250" font-family="Segoe UI,Arial,sans-serif" font-size="27" font-weight="700" fill="#202a33">Splunk and alert adapter</text>
+<text x="90" y="289" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#202a33">Windows and Sysmon events</text>
+<text x="90" y="321" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#202a33">Canonical evidence package</text>
+<text x="90" y="353" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#202a33">Stable identity and references</text>
+<rect x="565" y="205" width="370" height="170" rx="14" fill="#f4f8f9" stroke="#acbdc4" stroke-width="2"/>
+<text x="585" y="250" font-family="Segoe UI,Arial,sans-serif" font-size="27" font-weight="700" fill="#202a33">n8n routing</text>
+<text x="585" y="289" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#202a33">Authenticated webhook</text>
+<text x="585" y="321" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#202a33">Shared input validation</text>
+<text x="585" y="353" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#202a33">Protected worker request</text>
+<rect x="1060" y="205" width="370" height="170" rx="14" fill="#f4f8f9" stroke="#acbdc4" stroke-width="2"/>
+<text x="1080" y="250" font-family="Segoe UI,Arial,sans-serif" font-size="27" font-weight="700" fill="#202a33">Automation worker</text>
+<text x="1080" y="289" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#202a33">Relevant indicator research</text>
+<text x="1080" y="321" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#202a33">Validated advisory analysis</text>
+<text x="1080" y="353" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#202a33">Prepared case and state</text>
+<path d="M440 290 L565 290" stroke="#159cab" stroke-width="5"/>
+<polygon points="565,290 551.8362615716444,297.19138307906303 551.8362615716444,282.80861692093697" fill="#159cab"/>
+<path d="M935 290 L1060 290" stroke="#159cab" stroke-width="5"/>
+<polygon points="1060,290 1046.8362615716444,297.19138307906303 1046.8362615716444,282.80861692093697" fill="#159cab"/>
+<rect x="70" y="530" width="370" height="160" rx="14" fill="#f4f8f9" stroke="#acbdc4" stroke-width="2"/>
+<text x="90" y="575" font-family="Segoe UI,Arial,sans-serif" font-size="27" font-weight="700" fill="#202a33">Research providers</text>
+<text x="90" y="614" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#202a33">Public IPv4 or file hash only</text>
+<text x="90" y="646" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#202a33">AbuseIPDB and VirusTotal</text>
+<rect x="565" y="530" width="370" height="160" rx="14" fill="#f4f8f9" stroke="#acbdc4" stroke-width="2"/>
+<text x="585" y="575" font-family="Segoe UI,Arial,sans-serif" font-size="27" font-weight="700" fill="#202a33">IRIS and Slack</text>
+<text x="585" y="614" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#202a33">Case delivery in send mode</text>
+<text x="585" y="646" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#202a33">High or Critical notification</text>
+<rect x="1060" y="530" width="370" height="160" rx="14" fill="#f4f8f9" stroke="#acbdc4" stroke-width="2"/>
+<text x="1080" y="575" font-family="Segoe UI,Arial,sans-serif" font-size="27" font-weight="700" fill="#202a33">Analyst decision</text>
+<text x="1080" y="614" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#202a33">Correlate source evidence</text>
+<text x="1080" y="646" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#202a33">Authorize response separately</text>
+<path d="M1245 375 L750 530" stroke="#159cab" stroke-width="5"/>
+<polygon points="750,530 760.4133083343664,519.2035649618305 764.7112213287571,532.929158072949" fill="#159cab"/>
+<path d="M935 610 L1060 610" stroke="#159cab" stroke-width="5"/>
+<polygon points="1060,610 1046.8362615716444,617.191383079063 1046.8362615716444,602.808616920937" fill="#159cab"/>
+<path d="M440 530 L1060 375" stroke="#159cab" stroke-width="5"/>
+<polygon points="1060,375 1048.9734644798123,385.1693418873611 1045.4851312998996,371.216009167711" fill="#159cab"/>
+<text x="70" y="820" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400" fill="#65747c">Beyond the Alert  |  Original explanatory diagram  |  Service execution remains to be validated</text>
+</svg>

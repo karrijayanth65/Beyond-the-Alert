@@ -1,0 +1,574 @@
+TAP version 13
+# Subtest: prepares failed_logins with preserved evidence
+ok 1 - prepares failed_logins with preserved evidence
+  ---
+  duration_ms: 13.8171
+  type: 'test'
+  ...
+# Subtest: prepares account_change with preserved evidence
+ok 2 - prepares account_change with preserved evidence
+  ---
+  duration_ms: 1.8574
+  type: 'test'
+  ...
+# Subtest: prepares file_hash with preserved evidence
+ok 3 - prepares file_hash with preserved evidence
+  ---
+  duration_ms: 1.6087
+  type: 'test'
+  ...
+# Subtest: prepares powershell with preserved evidence
+ok 4 - prepares powershell with preserved evidence
+  ---
+  duration_ms: 1.4225
+  type: 'test'
+  ...
+# Subtest: prepares network_scan with preserved evidence
+ok 5 - prepares network_scan with preserved evidence
+  ---
+  duration_ms: 1.3085
+  type: 'test'
+  ...
+# Subtest: rejects missing host
+ok 6 - rejects missing host
+  ---
+  duration_ms: 1.2409
+  type: 'test'
+  ...
+# Subtest: rejects unknown scenario
+ok 7 - rejects unknown scenario
+  ---
+  duration_ms: 0.3777
+  type: 'test'
+  ...
+# Subtest: rejects unknown key
+ok 8 - rejects unknown key
+  ---
+  duration_ms: 0.3032
+  type: 'test'
+  ...
+# Subtest: rejects timestamp timezone
+ok 9 - rejects timestamp timezone
+  ---
+  duration_ms: 0.4745
+  type: 'test'
+  ...
+# Subtest: rejects invalid calendar
+ok 10 - rejects invalid calendar
+  ---
+  duration_ms: 0.7008
+  type: 'test'
+  ...
+# Subtest: rejects missing subject
+ok 11 - rejects missing subject
+  ---
+  duration_ms: 0.4845
+  type: 'test'
+  ...
+# Subtest: rejects invalid hash
+ok 12 - rejects invalid hash
+  ---
+  duration_ms: 0.5294
+  type: 'test'
+  ...
+# Subtest: rejects invalid IPv4
+ok 13 - rejects invalid IPv4
+  ---
+  duration_ms: 0.491
+  type: 'test'
+  ...
+# Subtest: rejects ambiguous IPv4
+ok 14 - rejects ambiguous IPv4
+  ---
+  duration_ms: 0.2895
+  type: 'test'
+  ...
+# Subtest: rejects unsafe source link
+ok 15 - rejects unsafe source link
+  ---
+  duration_ms: 2.7492
+  type: 'test'
+  ...
+# Subtest: rejects source credentials
+ok 16 - rejects source credentials
+  ---
+  duration_ms: 0.6241
+  type: 'test'
+  ...
+# Subtest: rejects missing evidence
+ok 17 - rejects missing evidence
+  ---
+  duration_ms: 0.5346
+  type: 'test'
+  ...
+# Subtest: rejects duplicate references
+ok 18 - rejects duplicate references
+  ---
+  duration_ms: 0.4323
+  type: 'test'
+  ...
+# Subtest: rejects oversized event text
+ok 19 - rejects oversized event text
+  ---
+  duration_ms: 0.4493
+  type: 'test'
+  ...
+# Subtest: rejects invalid synthetic label
+ok 20 - rejects invalid synthetic label
+  ---
+  duration_ms: 0.4005
+  type: 'test'
+  ...
+# Subtest: rejects invalid details
+ok 21 - rejects invalid details
+  ---
+  duration_ms: 0.2962
+  type: 'test'
+  ...
+# Subtest: rejects non-object null
+ok 22 - rejects non-object null
+  ---
+  duration_ms: 0.3231
+  type: 'test'
+  ...
+# Subtest: rejects non-object []
+ok 23 - rejects non-object []
+  ---
+  duration_ms: 0.207
+  type: 'test'
+  ...
+# Subtest: rejects non-object 1
+ok 24 - rejects non-object 1
+  ---
+  duration_ms: 0.1313
+  type: 'test'
+  ...
+# Subtest: rejects non-object "x"
+ok 25 - rejects non-object "x"
+  ---
+  duration_ms: 0.2015
+  type: 'test'
+  ...
+# Subtest: no public reputation for 0.1.2.3
+ok 26 - no public reputation for 0.1.2.3
+  ---
+  duration_ms: 0.2105
+  type: 'test'
+  ...
+# Subtest: no public reputation for 10.0.0.1
+ok 27 - no public reputation for 10.0.0.1
+  ---
+  duration_ms: 0.1353
+  type: 'test'
+  ...
+# Subtest: no public reputation for 100.64.0.1
+ok 28 - no public reputation for 100.64.0.1
+  ---
+  duration_ms: 0.1359
+  type: 'test'
+  ...
+# Subtest: no public reputation for 127.0.0.1
+ok 29 - no public reputation for 127.0.0.1
+  ---
+  duration_ms: 0.1308
+  type: 'test'
+  ...
+# Subtest: no public reputation for 169.254.1.2
+ok 30 - no public reputation for 169.254.1.2
+  ---
+  duration_ms: 0.3203
+  type: 'test'
+  ...
+# Subtest: no public reputation for 172.16.1.1
+ok 31 - no public reputation for 172.16.1.1
+  ---
+  duration_ms: 0.1652
+  type: 'test'
+  ...
+# Subtest: no public reputation for 172.31.255.255
+ok 32 - no public reputation for 172.31.255.255
+  ---
+  duration_ms: 0.2588
+  type: 'test'
+  ...
+# Subtest: no public reputation for 192.0.0.1
+ok 33 - no public reputation for 192.0.0.1
+  ---
+  duration_ms: 0.1196
+  type: 'test'
+  ...
+# Subtest: no public reputation for 192.0.2.3
+ok 34 - no public reputation for 192.0.2.3
+  ---
+  duration_ms: 0.106
+  type: 'test'
+  ...
+# Subtest: no public reputation for 192.168.1.1
+ok 35 - no public reputation for 192.168.1.1
+  ---
+  duration_ms: 0.1236
+  type: 'test'
+  ...
+# Subtest: no public reputation for 198.18.0.1
+ok 36 - no public reputation for 198.18.0.1
+  ---
+  duration_ms: 0.133
+  type: 'test'
+  ...
+# Subtest: no public reputation for 198.51.100.9
+ok 37 - no public reputation for 198.51.100.9
+  ---
+  duration_ms: 0.1178
+  type: 'test'
+  ...
+# Subtest: no public reputation for 203.0.113.2
+ok 38 - no public reputation for 203.0.113.2
+  ---
+  duration_ms: 0.0967
+  type: 'test'
+  ...
+# Subtest: no public reputation for 224.1.2.3
+ok 39 - no public reputation for 224.1.2.3
+  ---
+  duration_ms: 0.1132
+  type: 'test'
+  ...
+# Subtest: no public reputation for 255.255.255.255
+ok 40 - no public reputation for 255.255.255.255
+  ---
+  duration_ms: 0.1228
+  type: 'test'
+  ...
+# Subtest: no public reputation for ::1
+ok 41 - no public reputation for ::1
+  ---
+  duration_ms: 0.0836
+  type: 'test'
+  ...
+# Subtest: no public reputation for not-an-ip
+ok 42 - no public reputation for not-an-ip
+  ---
+  duration_ms: 0.1051
+  type: 'test'
+  ...
+# Subtest: recognizes globally routable 8.8.8.8
+ok 43 - recognizes globally routable 8.8.8.8
+  ---
+  duration_ms: 0.2054
+  type: 'test'
+  ...
+# Subtest: recognizes globally routable 1.1.1.1
+ok 44 - recognizes globally routable 1.1.1.1
+  ---
+  duration_ms: 0.1154
+  type: 'test'
+  ...
+# Subtest: recognizes globally routable 172.32.1.1
+ok 45 - recognizes globally routable 172.32.1.1
+  ---
+  duration_ms: 0.1185
+  type: 'test'
+  ...
+# Subtest: private IP skips reputation calls
+ok 46 - private IP skips reputation calls
+  ---
+  duration_ms: 1.1593
+  type: 'test'
+  ...
+# Subtest: public IP is enriched before analysis
+ok 47 - public IP is enriched before analysis
+  ---
+  duration_ms: 1.4139
+  type: 'test'
+  ...
+# Subtest: model rejects conflicting host
+ok 48 - model rejects conflicting host
+  ---
+  duration_ms: 0.4022
+  type: 'test'
+  ...
+# Subtest: model rejects conflicting actor
+ok 49 - model rejects conflicting actor
+  ---
+  duration_ms: 0.249
+  type: 'test'
+  ...
+# Subtest: model rejects invented reference
+ok 50 - model rejects invented reference
+  ---
+  duration_ms: 0.2987
+  type: 'test'
+  ...
+# Subtest: model rejects invented quote
+ok 51 - model rejects invented quote
+  ---
+  duration_ms: 0.2191
+  type: 'test'
+  ...
+# Subtest: model rejects unsupported outcome
+ok 52 - model rejects unsupported outcome
+  ---
+  duration_ms: 0.2096
+  type: 'test'
+  ...
+# Subtest: model rejects extra fields
+ok 53 - model rejects extra fields
+  ---
+  duration_ms: 0.1937
+  type: 'test'
+  ...
+# Subtest: model rejects dangerous recommendation
+ok 54 - model rejects dangerous recommendation
+  ---
+  duration_ms: 0.1865
+  type: 'test'
+  ...
+# Subtest: model rejects empty quotations
+ok 55 - model rejects empty quotations
+  ---
+  duration_ms: 0.1852
+  type: 'test'
+  ...
+# Subtest: model rejects invalid severity
+ok 56 - model rejects invalid severity
+  ---
+  duration_ms: 0.3869
+  type: 'test'
+  ...
+# Subtest: model request separates untrusted content from instructions
+ok 57 - model request separates untrusted content from instructions
+  ---
+  duration_ms: 0.9067
+  type: 'test'
+  ...
+# Subtest: bad model output becomes review without delivery
+ok 58 - bad model output becomes review without delivery
+  ---
+  duration_ms: 1.0762
+  type: 'test'
+  ...
+# Subtest: wrong enrichment indicator becomes review
+ok 59 - wrong enrichment indicator becomes review
+  ---
+  duration_ms: 0.868
+  type: 'test'
+  ...
+# Subtest: rate-limit failure stays visible and stops writes
+ok 60 - rate-limit failure stays visible and stops writes
+  ---
+  duration_ms: 1.0334
+  type: 'test'
+  ...
+# Subtest: duplicate ID does not create duplicate cases
+ok 61 - duplicate ID does not create duplicate cases
+  ---
+  duration_ms: 1.4259
+  type: 'test'
+  ...
+# Subtest: same alert ID with different content is flagged
+ok 62 - same alert ID with different content is flagged
+  ---
+  duration_ms: 0.8374
+  type: 'test'
+  ...
+# Subtest: partial write is retained and duplicate is not replayed
+ok 63 - partial write is retained and duplicate is not replayed
+  ---
+  duration_ms: 1.3
+  type: 'test'
+  ...
+# Subtest: notification failure preserves case ID for review
+ok 64 - notification failure preserves case ID for review
+  ---
+  duration_ms: 1.2627
+  type: 'test'
+  ...
+# Subtest: medium severity has case but no Slack delivery
+ok 65 - medium severity has case but no Slack delivery
+  ---
+  duration_ms: 0.9795
+  type: 'test'
+  ...
+# Subtest: Slack escapes untrusted markup
+ok 66 - Slack escapes untrusted markup
+  ---
+  duration_ms: 0.2395
+  type: 'test'
+  ...
+# Subtest: FileStore persists duplicate protection across restarts
+ok 67 - FileStore persists duplicate protection across restarts
+  ---
+  duration_ms: 122.1913
+  type: 'test'
+  ...
+# Subtest: concurrent FileStore reservation has one owner
+ok 68 - concurrent FileStore reservation has one owner
+  ---
+  duration_ms: 9.3705
+  type: 'test'
+  ...
+# Subtest: rejects unsafe service origin http://127.0.0.1
+ok 69 - rejects unsafe service origin http://127.0.0.1
+  ---
+  duration_ms: 0.7772
+  type: 'test'
+  ...
+# Subtest: rejects unsafe service origin https://x:y@a.invalid
+ok 70 - rejects unsafe service origin https://x:y@a.invalid
+  ---
+  duration_ms: 0.1887
+  type: 'test'
+  ...
+# Subtest: rejects unsafe service origin https://a.invalid/path
+ok 71 - rejects unsafe service origin https://a.invalid/path
+  ---
+  duration_ms: 0.1309
+  type: 'test'
+  ...
+# Subtest: rejects unsafe service origin https://a.invalid?token=x
+ok 72 - rejects unsafe service origin https://a.invalid?token=x
+  ---
+  duration_ms: 0.1443
+  type: 'test'
+  ...
+# Subtest: TLS service origin is accepted
+ok 73 - TLS service origin is accepted
+  ---
+  duration_ms: 0.1901
+  type: 'test'
+  ...
+# Subtest: GET 429 retry is bounded
+ok 74 - GET 429 retry is bounded
+  ---
+  duration_ms: 184.4594
+  type: 'test'
+  ...
+# Subtest: POST 503 is not retried
+ok 75 - POST 503 is not retried
+  ---
+  duration_ms: 0.9276
+  type: 'test'
+  ...
+# Subtest: timeout abort is surfaced
+ok 76 - timeout abort is surfaced
+  ---
+  duration_ms: 14.0732
+  type: 'test'
+  ...
+# Subtest: response size is bounded
+ok 77 - response size is bounded
+  ---
+  duration_ms: 2.306
+  type: 'test'
+  ...
+# Subtest: redirect is rejected by fetch policy
+ok 78 - redirect is rejected by fetch policy
+  ---
+  duration_ms: 0.9192
+  type: 'test'
+  ...
+# Subtest: provider exception text is not leaked
+ok 79 - provider exception text is not leaked
+  ---
+  duration_ms: 0.9949
+  type: 'test'
+  ...
+# Subtest: AbuseIPDB response is identity checked
+ok 80 - AbuseIPDB response is identity checked
+  ---
+  duration_ms: 0.8565
+  type: 'test'
+  ...
+# Subtest: VirusTotal response is hash checked
+ok 81 - VirusTotal response is hash checked
+  ---
+  duration_ms: 0.3031
+  type: 'test'
+  ...
+# Subtest: model truncation is rejected
+ok 82 - model truncation is rejected
+  ---
+  duration_ms: 0.4849
+  type: 'test'
+  ...
+# Subtest: IRIS response requires a success receipt
+ok 83 - IRIS response requires a success receipt
+  ---
+  duration_ms: 0.4687
+  type: 'test'
+  ...
+# Subtest: Slack HTTP success with application error is rejected
+ok 84 - Slack HTTP success with application error is rejected
+  ---
+  duration_ms: 0.4051
+  type: 'test'
+  ...
+# Subtest: worker auth rejects missing and wrong tokens
+ok 85 - worker auth rejects missing and wrong tokens
+  ---
+  duration_ms: 93.9478
+  type: 'test'
+  ...
+# Subtest: worker returns a receipt without exposing telemetry
+ok 86 - worker returns a receipt without exposing telemetry
+  ---
+  duration_ms: 30.3693
+  type: 'test'
+  ...
+# Subtest: worker rejects malformed JSON
+ok 87 - worker rejects malformed JSON
+  ---
+  duration_ms: 11.5152
+  type: 'test'
+  ...
+# Subtest: workflow connects every nonterminal node and stays inactive
+ok 88 - workflow connects every nonterminal node and stays inactive
+  ---
+  duration_ms: 1.1049
+  type: 'test'
+  ...
+# Subtest: generated n8n validator uses maintained implementation
+ok 89 - generated n8n validator uses maintained implementation
+  ---
+  duration_ms: 1.6679
+  type: 'test'
+  ...
+# Subtest: rejects unrelated event type
+ok 90 - rejects unrelated event type
+  ---
+  duration_ms: 0.4286
+  type: 'test'
+  ...
+# Subtest: rejects below-threshold login aggregate
+ok 91 - rejects below-threshold login aggregate
+  ---
+  duration_ms: 0.3378
+  type: 'test'
+  ...
+# Subtest: rejects below-threshold scan aggregate
+ok 92 - rejects below-threshold scan aggregate
+  ---
+  duration_ms: 0.3159
+  type: 'test'
+  ...
+# Subtest: rejects normalized next-day clock
+ok 93 - rejects normalized next-day clock
+  ---
+  duration_ms: 0.2576
+  type: 'test'
+  ...
+# Subtest: all five generated examples reproduce deterministic preparation
+ok 94 - all five generated examples reproduce deterministic preparation
+  ---
+  duration_ms: 18.5008
+  type: 'test'
+  ...
+1..94
+# tests 94
+# suites 0
+# pass 94
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 892.292

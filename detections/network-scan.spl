@@ -1,0 +1,4 @@
+index=windows sourcetype="XmlWinEventLog:Security" EventCode=5157 earliest=-5m latest=now
+| stats count as drops dc(DestPort) as unique_ports values(DestAddress) as destinations values(DestPort) as ports values(EventRecordID) as record_ids min(_time) as first_seen by host SourceAddress
+| where unique_ports >= 3 OR drops >= 5
+| rename SourceAddress as source_ip

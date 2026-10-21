@@ -1,0 +1,37 @@
+{
+  "project": "Beyond the Alert",
+  "verified_by": "Jayanth",
+  "run_at": "2026-10-21T11:07:15.672717+00:00",
+  "runtime": "Node.js 24.19.0",
+  "tests": {
+    "total": 94,
+    "passed": 94,
+    "failed": 0
+  },
+  "scope": [
+    "JavaScript behavioral and failure-path checks",
+    "Real loopback worker HTTP with substituted external adapters",
+    "Generated workflow structure and validator execution",
+    "Five reproducible synthetic examples"
+  ],
+  "not_verified": [
+    "n8n service import or execution",
+    "Splunk searches against a deployed index",
+    "Actual provider/model/IRIS/Slack calls",
+    "Production performance or containment"
+  ],
+  "source_sha256": {
+    "examples/fixtures.mjs": "07dd96af3a9243094966c41b30408c4251b626de1da45476452a952ea0a6840c",
+    "scripts/build.mjs": "0f96e0037b52c7f0f0b003fb8d144d4219476a4bec3a0abfb4761dc1cc6fed26",
+    "scripts/check.mjs": "4c00362b85350d1b3d1d60a44508f92e3b67cb31d39177ee9f9e43d234d02f6b",
+    "scripts/demo.mjs": "cbdfb7a421f00f5ff58c13f650cccac593a14cdaaf81018a23486cdd97fede89",
+    "src/adapters.mjs": "efecfd2fa4b335c13a9e34c8245a9022bdc1190e32857134bf260d37be2160e3",
+    "src/analysis.mjs": "2686798f183230f68f94d772a13848d09a6a993f6662fc99b127a20b64fbb120",
+    "src/pipeline.mjs": "30c2ba65aff430bed9860ccd60ce8375c303410a8c2b77f68a65e4965eb7824b",
+    "src/server.mjs": "a5bef74c7108a7e1b3b17045be4d968b444dc5499760a131665eab7ca30ba0c3",
+    "src/state.mjs": "c59d0d877be301cf57b9557186cd863ce29a936c86da340bab6a8744eb13f983",
+    "src/transport.mjs": "fac7ae4fa173ef7eb3301572785e843e7f236d18412527e495b42d393842c8f1",
+    "src/validation.mjs": "6a51f4679b2b578bc7b1886e9bf2ba198b69d3d64880c870fa565ecae709b547",
+    "tests/core.test.mjs": "ba8f79096f78c4bcfef298bf290b56c7e523123c6a206bad6b96ac9acec76088"
+  }
+}

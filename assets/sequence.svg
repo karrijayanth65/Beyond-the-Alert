@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1000" viewBox="0 0 1500 1000"><rect width="100%" height="100%" fill="white"/>
+<text x="70" y="85" font-family="Segoe UI,Arial,sans-serif" font-size="40" font-weight="700" fill="#202a33">Processing sequence</text>
+<text x="70" y="126" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#55616b">Preparation is the default. Delivery requires explicit configuration.</text>
+<rect x="180" y="175" width="1140" height="95" rx="14" fill="#f4f8f9" stroke="#acbdc4" stroke-width="2"/>
+<text x="200" y="220" font-family="Segoe UI,Arial,sans-serif" font-size="27" font-weight="700" fill="#202a33">1  Validate and reserve</text>
+<text x="200" y="259" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#202a33">Reject malformed evidence and duplicate identity conflicts.</text>
+<path d="M750 270 L750 297" stroke="#159cab" stroke-width="5"/>
+<polygon points="750,297 742.808616920937,283.8362615716444 757.191383079063,283.8362615716444" fill="#159cab"/>
+<rect x="180" y="297" width="1140" height="95" rx="14" fill="#f4f8f9" stroke="#acbdc4" stroke-width="2"/>
+<text x="200" y="342" font-family="Segoe UI,Arial,sans-serif" font-size="27" font-weight="700" fill="#202a33">2  Research relevant indicators</text>
+<text x="200" y="381" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#202a33">Skip non-public IPv4. Bind reputation to the original indicator.</text>
+<path d="M750 392 L750 419" stroke="#159cab" stroke-width="5"/>
+<polygon points="750,419 742.808616920937,405.8362615716444 757.191383079063,405.8362615716444" fill="#159cab"/>
+<rect x="180" y="419" width="1140" height="95" rx="14" fill="#f4f8f9" stroke="#acbdc4" stroke-width="2"/>
+<text x="200" y="464" font-family="Segoe UI,Arial,sans-serif" font-size="27" font-weight="700" fill="#202a33">3  Check advisory analysis</text>
+<text x="200" y="503" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#202a33">Preserve identities, require source quotes and apply severity floor.</text>
+<path d="M750 514 L750 541" stroke="#159cab" stroke-width="5"/>
+<polygon points="750,541 742.808616920937,527.8362615716444 757.191383079063,527.8362615716444" fill="#159cab"/>
+<rect x="180" y="541" width="1140" height="95" rx="14" fill="#f4f8f9" stroke="#acbdc4" stroke-width="2"/>
+<text x="200" y="586" font-family="Segoe UI,Arial,sans-serif" font-size="27" font-weight="700" fill="#202a33">4  Prepare investigation package</text>
+<text x="200" y="625" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#202a33">Retain source context, review checks and downstream request fields.</text>
+<path d="M750 636 L750 663" stroke="#159cab" stroke-width="5"/>
+<polygon points="750,663 742.808616920937,649.8362615716444 757.191383079063,649.8362615716444" fill="#159cab"/>
+<rect x="180" y="663" width="1140" height="95" rx="14" fill="#f4f8f9" stroke="#acbdc4" stroke-width="2"/>
+<text x="200" y="708" font-family="Segoe UI,Arial,sans-serif" font-size="27" font-weight="700" fill="#202a33">5  Deliver only in send mode</text>
+<text x="200" y="747" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#202a33">IRIS alert → case escalation → High or Critical Slack notice.</text>
+<path d="M750 758 L750 785" stroke="#159cab" stroke-width="5"/>
+<polygon points="750,785 742.808616920937,771.8362615716444 757.191383079063,771.8362615716444" fill="#159cab"/>
+<rect x="180" y="785" width="1140" height="95" rx="14" fill="#f4f8f9" stroke="#acbdc4" stroke-width="2"/>
+<text x="200" y="830" font-family="Segoe UI,Arial,sans-serif" font-size="27" font-weight="700" fill="#202a33">6  Record receipt or review state</text>
+<text x="200" y="869" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#202a33">Stop uncertain writes; reconcile before any controlled recovery.</text>
+<text x="70" y="970" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400" fill="#65747c">Beyond the Alert  |  Original explanatory diagram  |  Service execution remains to be validated</text>
+</svg>
