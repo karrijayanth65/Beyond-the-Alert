@@ -4,9 +4,9 @@
 
 **Author: Jayanth**
 
-![Beyond the Alert — SOC Investigation Automation; conceptual core-processing and dashboard artwork](assets/project-banner.png)
+![Conceptual core-processing and dashboard artwork for the investigation workflow](assets/project-banner.png)
 
-Beyond the Alert turns security alerts into structured investigation packages: preserve Windows event context, route alerts through authenticated n8n intake, add relevant indicator research and an advisory AI assessment, and prepare DFIR-IRIS case details and analyst notifications. The repository includes five reproducible synthetic scenarios and a recorded suite of 94 passing behavioral checks. The goal is a consistent, reviewable handoff that reduces repeated investigation preparation.
+The workflow turns security alerts into structured investigation packages: preserve Windows event context, route alerts through authenticated n8n intake, add relevant indicator research and an advisory AI assessment, and prepare DFIR-IRIS case details and analyst notifications. The repository includes five reproducible synthetic scenarios and a recorded suite of 94 passing behavioral checks. The goal is a consistent, reviewable handoff that reduces repeated investigation preparation.
 
 ## Watch the project in 96 seconds
 
@@ -315,7 +315,7 @@ The build/demo/check commands generate or refresh local files. The example comma
 
 ## Learning and Project Context
 
-Beyond the Alert is an educational SOC investigation portfolio focused on evidence handling, identity validation, enrichment interpretation, prioritization, escalation and response planning. The lab design, supplied evaluation and maintained implementation have different evidence scopes, described in the [evidence policy](docs/evidence-policy.md).
+This educational SOC investigation portfolio focuses on evidence handling, identity validation, enrichment interpretation, prioritization, escalation and response planning. The lab design, supplied evaluation and maintained implementation have different evidence scopes, described in the [evidence policy](docs/evidence-policy.md).
 
 ## Project Scope
 
