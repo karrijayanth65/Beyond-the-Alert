@@ -2,6 +2,8 @@
 
 | Asset | Source and meaning |
 |---|---|
+| `project-banner.png` | Generated conceptual project banner with title; used in the main README |
+| `social-preview.png` | Generated 1280 × 640 conceptual architecture artwork for repository social sharing |
 | `architecture.svg` and `.png` | Original component diagram; explains the implemented design |
 | `sequence.svg` and `.png` | Original processing sequence; includes preparation and conditional delivery |
 | `investigation-lifecycle-transparent.png` | Generated conceptual lifecycle illustration used in the main README; individual cards remain white for readable text |

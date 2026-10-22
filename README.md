@@ -4,6 +4,8 @@
 
 **Author: Jayanth**
 
+![Beyond the Alert — SOC Investigation Automation; conceptual core-processing and dashboard artwork](assets/project-banner.png)
+
 Beyond the Alert turns security alerts into structured investigation packages: preserve Windows event context, route alerts through authenticated n8n intake, add relevant indicator research and an advisory AI assessment, and prepare DFIR-IRIS case details and analyst notifications. The repository includes five reproducible synthetic scenarios and a recorded suite of 94 passing behavioral checks. The goal is a consistent, reviewable handoff that reduces repeated investigation preparation.
 
 ## Watch the project in 96 seconds
