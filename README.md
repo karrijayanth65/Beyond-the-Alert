@@ -14,6 +14,8 @@ https://github.com/user-attachments/assets/dd987e7c-7482-44d4-8458-6b449489ce47
 
 **For the full video with multilingual audio and subtitle options, [watch on YouTube](https://youtu.be/ZuyXWEKCFKM).** Choose an available audio track or Subtitles/CC in YouTube settings.
 
+**[Read the project walkthrough on Medium](https://medium.com/@nameisnani2027/beyond-the-alert-connecting-splunk-n8n-and-ai-for-soc-investigation-4f64caa74746)** for the investigation story and current implementation notes.
+
 > **Splunk → n8n → advisory LLM analysis + relevant threat intelligence → DFIR-IRIS → Slack → analyst review**
 
 ## Pipeline Architecture
