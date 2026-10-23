@@ -12,8 +12,8 @@ The supplied 15-row CSV supports a clearly labeled reported-evaluation section. 
 
 All five example inputs are labeled synthetic. Their JSON and HTML outputs are reproducible from maintained source. Screenshots in the code walkthrough show those actual generated views and do not imitate running product interfaces. Fixture timestamps and identifiers are synthetic data; test-run timestamps come from executed validation commands.
 
-## Video and future service evidence
+## Video and service evidence records
 
 The explanation video is conceptual and uses a fictional analyst. The current README player uses the user-provided V2 MP4, uploaded unchanged; [video-source.json](../assets/video-source.json) records its SHA-256, duration and attachment URL. The original MP4 is a separate version with SHA-256 `f33721525db75db053b20cb97fa56ae01195a09f6da27c6f4dc17068b346eb29`. Neither version establishes service execution, timing or containment.
 
-For future service evidence, record collection method, UTC time, source versions, run IDs, integrity hashes, transformations and access restrictions. Preserve originals and redact secrets transparently. Distinguish a configured capability, an attempted operation, an accepted receipt and a confirmed security outcome.
+For service evidence records, document collection method, UTC time, source versions, run IDs, integrity hashes, transformations and access restrictions. Preserve originals and redact secrets transparently. Distinguish a configured capability, an attempted operation, an accepted receipt and a confirmed security outcome.

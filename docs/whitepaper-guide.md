@@ -3,7 +3,7 @@
 ## Two papers with complementary purposes
 
 - [Beyond the Alert - 13-page lab whitepaper](../reports/Beyond_the_Alert_Whitepaper.pdf) covers lab design, artifact-based investigation and reported evaluation.
-- [Maintained implementation whitepaper](../reports/Jayanth_Whitepaper.pdf) covers the JavaScript worker, reproducible synthetic examples, recorded verification and the next service-integration milestone.
+- [Maintained implementation whitepaper](../reports/Jayanth_Whitepaper.pdf) covers the JavaScript worker, reproducible synthetic examples, recorded verification and service-deployment guidance.
 
 Read the lab paper for the earlier component design and reported study; read the implementation paper for current processing behavior and verification. The earlier source export differs from the current worker. [Architecture](architecture.md) gives the exact current sequence. Analysts authorize response actions through separate tooling.
 

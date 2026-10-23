@@ -1,6 +1,6 @@
 # Account change investigation walkthrough
 
-This walkthrough follows a reproducible synthetic account-change input through the generated investigation package. It demonstrates identity validation, indicator relevance and escalation reasoning. [Validation](validation.md) distinguishes these local checks from the next service-connected milestone.
+This walkthrough follows a reproducible synthetic account-change input through the generated investigation package. It demonstrates identity validation, indicator relevance and escalation reasoning. [Validation](validation.md) records the checks behind this example and provides a service deployment and verification procedure.
 
 ## Establish the question
 

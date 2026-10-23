@@ -6,7 +6,7 @@
 
 ![Conceptual core-processing and dashboard artwork for the investigation workflow](assets/project-banner.png)
 
-The workflow turns security alerts into structured investigation packages: preserve Windows event context, route alerts through authenticated n8n intake, add relevant indicator research and an advisory AI assessment, and prepare DFIR-IRIS case details and analyst notifications. The repository includes five reproducible synthetic scenarios and a recorded suite of 94 passing behavioral checks. The goal is a consistent, reviewable handoff that reduces repeated investigation preparation.
+The workflow turns security alerts into structured investigation packages: preserve Windows event context, route alerts through authenticated n8n intake, add relevant indicator research and a structured assessment for analyst review, and prepare DFIR-IRIS case details and analyst notifications. The repository includes five reproducible synthetic scenarios and a recorded suite of 94 passing behavioral checks. The goal is a consistent, reviewable handoff that reduces repeated investigation preparation.
 
 ## Watch the project in 96 seconds
 
@@ -66,7 +66,7 @@ The project brings together three questions that matter to a SOC analyst:
 
 *Beyond the Alert — Jayanth SOC Automation Lab: Connecting Detection Evidence to Analyst Investigation.* The cover edition follows the problem, architecture, investigation example, supplied evaluation and practical next steps. [Reading and source notes](docs/whitepaper-guide.md).
 
-For the maintained JavaScript implementation, [the separate implementation paper](reports/Jayanth_Whitepaper.pdf) explains reproducible synthetic verification and the service-integration work that remains.
+For the maintained JavaScript implementation, [the separate implementation paper](reports/Jayanth_Whitepaper.pdf) explains processing logic, reproducible examples and validation results.
 
 ## Pipeline in Action
 
@@ -76,7 +76,7 @@ The following lab artifacts illustrate workflow configuration, case context and 
 
 ![Supplied n8n workflow showing alert routes, analysis, enrichment and case/notification requests](assets/lab/01-n8n-workflow.png)
 
-*Artifact 01 — [full resolution](assets/lab/01-n8n-workflow.png). Workflow configuration and pinned samples document the automation logic and example data flow. The earlier export requires route reconnection. The [maintained export](workflows/jayanth.json) has connected routes and remains inactive until configured and service-validated.*
+*Artifact 01 — [full resolution](assets/lab/01-n8n-workflow.png). Workflow configuration and pinned samples document the automation logic and example data flow. The earlier export requires route reconnection. The [maintained export](workflows/jayanth.json) has connected routes and ships inactive so credentials and endpoints can be configured before activation.*
 
 The analyst should be able to trace the alert context into the research and case requests. In the maintained send path, IRIS case creation precedes Slack notification; High/Critical severity gates Slack, not case creation.
 
@@ -205,13 +205,13 @@ Integrated rows have mean action/context ratings of **4.57/5 and 4.29/5**; LLM-o
 
 The table uses the original `triage_time_s` values. The retained dashboard explains reported totals for runs 1, 3, 6 and 7 as including detection and pipeline processing. No recorded value is replaced. The CSV does not contain the ground-truth/prediction fields needed to independently substantiate a “100% classification accuracy” claim. [Evaluation notes and data](docs/evaluation/README.md).
 
-## Validation Status and Next Milestones
+## Verification and Operational Scope
 
 | Area | Boundary and next step |
 |---|---|
 | Evidence sources | Lab figures, historical evaluation and current-code examples have separate provenance and verification records. See the [artifact guide](docs/artifacts.md). |
 | Evaluation | The reported comparison contains 15 rows with unequal scenario coverage and reported quality scoring. A matched current-worker evaluation is a future milestone. |
-| Service integration | Next milestone: validate deployed SPL, canonical alert mapping, n8n import and actual provider/model/IRIS/Slack contracts under one correlated run ID. |
+| Service contracts | The maintained worker supports canonical alert input, authenticated routing, enrichment, IRIS requests and Slack delivery. [Service deployment and verification procedure](docs/validation.md#service-deployment-and-verification-procedure) describes how to record a deployed run. |
 | Model interpretation | Schema, identity and exact-quote checks constrain output, but do not establish semantic truth. The current word filter can reject legitimate observed-blocking descriptions. |
 | Recovery | Single-host file state is not a distributed queue. JSON key order affects fingerprints; explicit prepare-to-send promotion and safe reconciliation remain engineering work. |
 | Privacy and deployment | Verify trusted TLS, least-privilege access, secret management, evidence retention, provider disclosure rules and rate limits before service-connected use. |
@@ -289,7 +289,7 @@ The build/demo/check commands generate or refresh local files. The example comma
 
 ## Maintained Implementation — Verification
 
-**Recorded verification: 94 passing behavioral checks** covering input handling, identity and quote checks, bounded transport, duplicate handling, visible partial failures, local authenticated HTTP and generated workflow structure. Five synthetic examples use deterministic provider substitutes. **End-to-end service integration is the next validation milestone.**
+**Recorded verification: 94 passing behavioral checks** covering input handling, identity and quote checks, bounded transport, duplicate handling, visible partial failures, local authenticated HTTP and generated workflow structure. Five synthetic examples use deterministic provider substitutes. This record covers the maintained worker’s behavioral checks, local authenticated HTTP and reproducible examples. The lab artifacts are documented separately in the [artifact guide](docs/artifacts.md).
 
 [Inputs](examples/inputs) · [Generated outputs](examples/outputs) · [Behavioral tests](tests/core.test.mjs) · [Validation summary](reports/validation-summary.json).
 
@@ -298,7 +298,7 @@ The build/demo/check commands generate or refresh local files. The example comma
 
 ![Generated synthetic account-change investigation package](assets/account-change-example.png)
 
-*Actual capture of the generated HTML view. Input and provider responses are synthetic; prepare mode contains no real IRIS/Slack delivery receipt. [Full-size image](assets/account-change-example.png) · [Analyst walkthrough](docs/investigation.md).*
+*Generated investigation package in prepare mode, using synthetic input and substitute provider responses. [Full-size image](assets/account-change-example.png) · [Analyst walkthrough](docs/investigation.md).*
 
 </details>
 
@@ -319,7 +319,7 @@ This educational SOC investigation portfolio focuses on evidence handling, ident
 
 ## Project Scope
 
-For authorized lab use. Analysts validate findings and authorize response actions. See [Validation Status and Next Milestones](#validation-status-and-next-milestones) for the verification scope and deployment checklist.
+For authorized lab use. Analysts validate findings and authorize response actions. See [Verification and Operational Scope](#verification-and-operational-scope) for the verification scope and deployment checklist.
 
 ## Connect
 

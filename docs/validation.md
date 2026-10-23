@@ -24,9 +24,9 @@ The last command checks syntax, generated-file drift, example reproduction, loca
 | Workflow | Inactive export, connected routes and execution of generated validation code |
 | Reproduction | Five deterministic generated investigation packages |
 
-## Next Integration Milestones
+## Service deployment and verification procedure
 
-Service validation is the next milestone: import the export into a pinned n8n instance, run the SPL against a deployed index, and exercise actual reputation, model, IRIS and Slack contracts. The recorded suite uses provider substitutes. Capture service configuration, trusted TLS, quotas, case creation and end-to-end timing in the integration record.
+To reproduce the service path in a lab, import the export into a pinned n8n instance, run the SPL against the deployed index, and exercise the configured reputation, model, IRIS and Slack contracts. The recorded behavioral suite uses provider substitutes. Document service versions, trusted TLS, quotas, case creation and end-to-end timing alongside each deployed run.
 
 For an integration run, capture a source event, mapped request, n8n execution ID, worker stages, provider receipts, IRIS alert/case IDs and Slack timestamp under a single run ID. Keep secrets out of captured records. Record failures as well as successes. Do not reuse historical benchmark rows or conceptual video frames as evidence for that run.
 
